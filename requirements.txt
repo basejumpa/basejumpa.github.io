@@ -1,1 +1,3 @@
 sphinx
+setuptools-scm
+sphinx-material

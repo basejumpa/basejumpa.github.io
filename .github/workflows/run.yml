@@ -42,7 +42,7 @@ jobs:
           pipenv install -r requirements.txt
 
       - name: Build main website
-        run: pipenv run sphinx-build doc build/html
+        run: ./run.sh
 
       - name: Upload website to artifacts
         uses: actions/upload-pages-artifact@v1
