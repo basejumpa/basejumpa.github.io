@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-pipenv run sphinx-build doc build/html 
+pipenv run sphinx-build website build/website/html 
