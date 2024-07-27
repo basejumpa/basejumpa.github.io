@@ -13,7 +13,6 @@
         "waderyan.gitblame",
         "solomonkinard.git-blame",
         "david-rickard.git-diff-and-merge-tool",
-        "scootersoftware.bcompare-vscode",
         "srmeyers.git-prefix",
         "adam-bender.commit-message-editor",
 
@@ -43,11 +42,5 @@
         "jebbs.plantuml",
         "bierner.markdown-mermaid",
         "tintinweb.graphviz-interactive-preview",
-
-        "ms-toolsai.jupyter",
-        "ms-toolsai.vscode-jupyter-powertoys",
-        "bpruitt-goddard.mermaid-markdown-syntax-highlighting",
-        "swyddfa.esbonio",
-        "luyuhuang.rss"
     ]
 }
