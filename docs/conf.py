@@ -6,13 +6,11 @@ import os
 import platform
 import sys
 
-### Import project configuration ##############################################
 _conf_location = os.path.realpath(os.path.dirname(__file__))
-sys.path.append(_conf_location)
 
-import config as configuration
-
-config = configuration.Config()
+### Import project configuration ##############################################
+with open(".config") as f:
+    exec(f.read())
 
 
 ###############################################################################
@@ -20,28 +18,20 @@ config = configuration.Config()
 ### SPHINX CONFIGURATION (GENERAL) ############################################
 # @see https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-# The configuration values shall be placed in the same order as they are placed in the documenting manual.
-# The documenting chapter of the manual shall be reflected by a section in this config file.
-# The hyperlink to that chapter shall be placed in the very first line of that section.
-
-# Helper variables which are used inside this configuration file which support a calculation of a
-# configuration value shall be named so they start with an underscore ("_") so it"s obvious
-# that they are local helper variables only used here.
-# This is not a function by the interpreter but a common syntax hint to the programmer.
 
 ### Project information #######################################################
 # @see https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project   = config.get("project")
-author    = config.get("author")
-copyright = config.get("year") + ", " + author
+project   = CONFIG_DOC__PROJECT
+author    = CONFIG_DOC__AUTHOR
+copyright = str(CONFIG_DOC__YEAR) + ", " + CONFIG_DOC__AUTHOR
 
 
 ### General configuration #####################################################
 # @see https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 # @see https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language
-language = config.get("language")
+language = CONFIG_DOC__LANGUAGE
 
 templates_path = []
 
@@ -59,6 +49,8 @@ numfig = True
 ### Options for HTML output ###################################################
 # @see https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
+html_title = CONFIG_DOC__TITLE
+
 html_static_path = []
 
 html_extra_path = []
@@ -66,8 +58,6 @@ html_extra_path = []
 html_show_sourcelink = True
 
 html_theme = "pydata_sphinx_theme"
-
-html_title = project
 
 if "classic" == html_theme: ###################################################
     pass
@@ -149,7 +139,8 @@ def _mermaid_on_builder_inited(app):
 if "Windows" == platform.system():
     mermaid_cmd_shell = "True"
 
-# For individual parameters, a list of parameters can be added. Refer to https://github.com/mermaidjs/mermaid.cli#options.
+# For individual parameters, a list of parameters can be added.
+# Refer to https://github.com/mermaidjs/mermaid.cli#options.
 mermaid_params =  []
 
 # Make it work under Linux as root (in CI in docker container)

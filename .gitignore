@@ -36,3 +36,6 @@ __pycache__/
 *.pyc
 
 .codespaces/
+
+# Backup of configuration
+.config.old

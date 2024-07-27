@@ -1,12 +1,16 @@
 menu "doc"
 
 config DOC__TITLE
-    string "Title of the Homepage"
+    string "Title"
     default "Alexander Mann-Wahrenberg's Homepage"
 
 config DOC__AUTHOR
     string "Author"
     default "Basejumpa"
+
+config DOC__YEAR
+    int "Year"
+    default 2024
 
 config DOC__PROJECT
     string "Project"

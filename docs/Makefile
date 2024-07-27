@@ -17,45 +17,11 @@ default: help
 # You can set these variables from the command line, and also
 # from the environment for the first two.
 
-CONFIG_JSON_FILE := config.json
-define CONFIG_JSON_DEFAULT
-{
-    "project" : "some-project",
-    "year"    : "2024",
-    "title"   : "title of some-doc",
-    "author"  : "author", 
-    "language": "en",
+# Determine the directory where the current Makefile is located
+MAKEFILE_PATH := $(abspath $(firstword $(MAKEFILE_LIST)))
+MAKEFILE_DIR := $(dir $(MAKEFILE_PATH))
 
-    "dirs" : {
-        "source": "docs",
-        "config": "docs",
-        "build" : "out/docs"
-    },
-
-    "live": {
-        "ports" : {
-            "html": 1976
-        }
-    }
-}
-endef
-export CONFIG_JSON_DEFAULT
-
-
-Makefile: $(CONFIG_JSON_FILE)
-
-$(CONFIG_JSON_FILE):
-	@echo Creating $@
-	@echo "$$CONFIG_JSON_DEFAULT" > $@
-
-
-# Build´
-DOC_CFG_SOURCE_DIR      ?= $(shell (cd docs ; python -m config    'dirs/source'))
-DOC_CFG_CONFIG_DIR      ?= $(shell (cd docs ; python -m config    'dirs/config'))
-DOC_CFG_BUILD_DIR       ?= $(shell (cd docs ; python -m config    'dirs/build'))
-
-# Build-Live
-DOC_CFG_HTML_LIVE_PORT  ?= $(shell (cd docs ; python -m config    'live/ports/html'))
+include $(MAKEFILE_DIR)/.config
 
 
 ### FIDDLE AREA ###############################################################
@@ -79,27 +45,11 @@ Known targets are are:
                     All tools except Latex, necessary for command build-pdf are installed.
     html          : Make documentation in HTML format
     html-live     : Continuous (re-)build of HTML output.
-                    Rebuild is being triggered by file changes inside folder DOC_CFG_BUILD_DIR. Start local webserver.
+                    Rebuild is being triggered by file changes inside folder CONFIG_BUILD__DIRS__BUILD. Start local webserver.
     clean         : Clean build output folder (default: out/docs)
     clean-install : Remove complete installation (located in .venv/)
                     Next other command will re-install tools.
     help          : Show this screen
-
-Environment variables used:
-
-    DOC_CFG_SOURCE_DIR    : Directory of documentation's source files
-                            Absolute or relative to working directory
-                            Default: docs
-    DOC_CFG_CONFIG_DIR    : Directory where configuration file docs.conf
-                            is located. Absolute or relative to working directory.
-                            Default: docs
-    DOC_CFG_BUILD_DIR     : Build output directory
-                            Absolute or relative to working directory
-                            Depending on html-live, make-html, make-pdf there
-                            Create a subdirectory accordingly (html-live, html or pdf)
-                            Default: out/docs
-
-    DOC_CFG_HTML_LIVE_PORT : TCP/IP port of local web server. Default: 1976
 endef
 
 
@@ -143,10 +93,10 @@ install: clean-install .tools/.are-up-to-date
 	$(PYTHON) -m pipx install poetry
 	export PATH="$$PATH:$$HOME/.local/bin" # Works for root. Not tested for other users.
 	mkdir .tools/
-	curl -L -o .tools/plantuml.jar https://github.com/plantuml/plantuml/releases/download/v1.2024.5/plantuml-1.2024.5.jar
+	curl -L -o .tools/plantuml.jar https://github.com/plantuml/plantuml/releases/download/v1.2024.6/plantuml-1.2024.6.jar
 	touch .tools/.are-up-to-date
 
-# Additional tools being prerequisites:
+# Additional tool prerequisites:
 #
 # scoop install \
 #    draw.io \
@@ -156,7 +106,6 @@ install: clean-install .tools/.are-up-to-date
 #
 # npm install -g \
 #    @mermaid-js/mermaid-cli
-#
 
 
 .PHONY: deps-are-up-to-date
@@ -177,32 +126,32 @@ clean-install:
 
 .PHONY: clean
 clean:
-	rm -rf "$(DOC_CFG_BUILD_DIR)"
+	rm -rf "$(CONFIG_BUILD__DIRS__BUILD)"
 
 
 .PHONY: html-live
 html-live: .tools/.are-up-to-date deps-are-up-to-date-live
-	mkdir -p "$(DOC_CFG_BUILD_DIR)/$@"
+	mkdir -p "$(CONFIG_BUILD__DIRS__BUILD)/$@"
 	# Start continuous build, open browser automatically which reloads on change.
-	@echo "Building sources at $(DOC_CFG_SOURCE_DIR)"
+	@echo "Building sources at $(CONFIG_BUILD__DIRS__SOURCE)"
 	poetry run sphinx-autobuild \
         -j 10 \
         -W \
-        -c "$(DOC_CFG_CONFIG_DIR)" \
-        --watch $(DOC_CFG_CONFIG_DIR) \
-        "$(DOC_CFG_SOURCE_DIR)" \
-        "$(DOC_CFG_BUILD_DIR)/$@" \
+        -c      "$(CONFIG_BUILD__DIRS__CONFIG)" \
+        --watch "$(CONFIG_BUILD__DIRS__CONFIG)" \
+                "$(CONFIG_BUILD__DIRS__SOURCE)" \
+                "$(CONFIG_BUILD__DIRS__BUILD)/$@" \
         --re-ignore '_tags/.*' \
-        --port "$(DOC_CFG_HTML_LIVE_PORT)" \
+        --port  "$(CONFIG_BUILD__LIVE__PORTS__HTML)" \
         --open-browser
 
 
 .PHONY: html
 html: .tools/.are-up-to-date deps-are-up-to-date
-	mkdir -p "$(DOC_CFG_BUILD_DIR)/$@"
-	@echo "Building sources at $(DOC_CFG_SOURCE_DIR)"
+	mkdir -p "$(CONFIG_BUILD__DIRS__BUILD)/$@"
+	@echo "Building sources at $(CONFIG_BUILD__DIRS__SOURCE)"
 	poetry run sphinx-build \
         -W \
-        -c "$(DOC_CFG_CONFIG_DIR)" \
-        "$(DOC_CFG_SOURCE_DIR)" \
-        "$(DOC_CFG_BUILD_DIR)/$@"
+        -c  "$(CONFIG_BUILD__DIRS__CONFIG)" \
+            "$(CONFIG_BUILD__DIRS__SOURCE)" \
+            "$(CONFIG_BUILD__DIRS__BUILD)/$@"
