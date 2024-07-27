@@ -33,8 +33,6 @@ copyright = str(CONFIG_DOC__YEAR) + ", " + CONFIG_DOC__AUTHOR
 # @see https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language
 language = CONFIG_DOC__LANGUAGE
 
-templates_path = []
-
 exclude_patterns = [
 ]
 
@@ -51,25 +49,40 @@ numfig = True
 
 html_title = CONFIG_DOC__TITLE
 
-html_static_path = []
+templates_path = ["_templates"]
+
+html_static_path = ["_static"]
+
+# These paths are either relative to html_static_path
+# or fully qualified paths (eg. https://...)
+html_css_files = [
+    "custom.css",
+]
 
 html_extra_path = []
 
-html_show_sourcelink = True
+html_show_sourcelink = False
 
 html_theme = "pydata_sphinx_theme"
 
-if "classic" == html_theme: ###################################################
-    pass
+html_theme_options = {
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/basejumpa",
+            "icon": "fa-brands fa-github",
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/basejumpa",
+            "icon": "fa-brands fa-linkedin"
+        }
+    ],
+}
 
-elif "pydata_sphinx_theme" == html_theme: #####################################
-    html_theme_options = {
-    "show_toc_level": 2
-    }
-    pass
-
-else:
-    pass
+html_sidebars = {
+    "*": ["me.html"]
+}
 
 
 ###############################################################################
@@ -193,6 +206,32 @@ extensions.append("sphinxcontrib.bibtex")
 bibtex_bibfiles = [
     "references.bib",
 ]
+
+
+### Enable blogging ###########################################################
+# @see https://ablog.readthedocs.io/en/stable/
+
+extensions.append("ablog")
+
+post_date_format = "%GCW%V.%u-%a"
+post_date_format_short = post_date_format
+
+blog_authors = {
+    "basejumpa": ("Alexander Mann-Wahrenberg", 'https://github.com/basejumpa'),
+}
+blog_default_author = "basejumpa"
+
+html_sidebars["blog/**"] = [
+    "ablog/postcard.html",
+    "ablog/recentposts.html",
+    "ablog/tagcloud.html",
+]
+
+
+### Enable embedding of Videos ################################################
+# @see https://sphinxcontrib-youtube.readthedocs.io
+
+extensions.append("sphinxcontrib.youtube")
 
 
 ### EOF #######################################################################

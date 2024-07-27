@@ -1,8 +1,8 @@
-Hello
-#####
+Hey, there!
+###########
 
-- `Willi-Makers <https://basejumpa.github.io/willi-makers/>`__
+.. toctree::
+    :maxdepth: 2
 
-.. drawio-figure:: _figures/some-diagram.drawio
-
-    Some diagram
+    blog/index
+    about/index
