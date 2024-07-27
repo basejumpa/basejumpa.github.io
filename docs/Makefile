@@ -113,9 +113,14 @@ deps-are-up-to-date: poetry.toml pyproject.toml
 	poetry update
 
 
-.PHONY: deps-are-up-to-date-live
-deps-are-up-to-date-live: poetry.toml pyproject.toml
+.PHONY: deps-are-up-to-date-dev
+deps-are-up-to-date-dev: poetry.toml pyproject.toml
 	poetry update --with dev
+
+
+.PHONY: clean
+clean:
+	rm -rf "$(CONFIG_BUILD__DIRS__BUILD)"
 
 
 clean-install:
@@ -124,13 +129,24 @@ clean-install:
 	rm -f  poetry.lock
 
 
-.PHONY: clean
-clean:
-	rm -rf "$(CONFIG_BUILD__DIRS__BUILD)"
+.PHONY: config
+config: .tools/.are-up-to-date deps-are-up-to-date-dev
+	(cd "$(CONFIG_BUILD__DIRS__CONFIG)" ; poetry run menuconfig )
+
+
+.PHONY: html
+html: .tools/.are-up-to-date deps-are-up-to-date
+	mkdir -p "$(CONFIG_BUILD__DIRS__BUILD)/$@"
+	@echo "Building sources at $(CONFIG_BUILD__DIRS__SOURCE)"
+	poetry run sphinx-build \
+        -W \
+        -c  "$(CONFIG_BUILD__DIRS__CONFIG)" \
+            "$(CONFIG_BUILD__DIRS__SOURCE)" \
+            "$(CONFIG_BUILD__DIRS__BUILD)/$@"
 
 
 .PHONY: html-live
-html-live: .tools/.are-up-to-date deps-are-up-to-date-live
+html-live: .tools/.are-up-to-date deps-are-up-to-date-dev
 	mkdir -p "$(CONFIG_BUILD__DIRS__BUILD)/$@"
 	# Start continuous build, open browser automatically which reloads on change.
 	@echo "Building sources at $(CONFIG_BUILD__DIRS__SOURCE)"
@@ -145,13 +161,3 @@ html-live: .tools/.are-up-to-date deps-are-up-to-date-live
         --port  "$(CONFIG_BUILD__LIVE__PORTS__HTML)" \
         --open-browser
 
-
-.PHONY: html
-html: .tools/.are-up-to-date deps-are-up-to-date
-	mkdir -p "$(CONFIG_BUILD__DIRS__BUILD)/$@"
-	@echo "Building sources at $(CONFIG_BUILD__DIRS__SOURCE)"
-	poetry run sphinx-build \
-        -W \
-        -c  "$(CONFIG_BUILD__DIRS__CONFIG)" \
-            "$(CONFIG_BUILD__DIRS__SOURCE)" \
-            "$(CONFIG_BUILD__DIRS__BUILD)/$@"

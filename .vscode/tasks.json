@@ -34,30 +34,18 @@
             }
         },
         {
-            "label": "html-live",
+            "label": "config",
             "type": "shell",
-            "command": "make -f docs/Makefile html-live",
+            "command": "make -f docs/Makefile config",
             "options": {
                 "statusbar": {
                     "hide": false
                 }
             },
-            "problemMatcher": [
-                {
-                    "owner": "sphinx",
-                    "fileLocation": "absolute",
-                    "pattern": {
-                        "regexp": "^(?:.*\\.{3}\\s+)?(\\/[^:]*|[a-zA-Z]:\\\\[^:]*):(\\d+):\\s+(WARNING|ERROR):\\s+(.*)$",
-                        "file": 1,
-                        "line": 2,
-                        "severity": 3,
-                        "message": 4
-                    }
-                }
-            ],
+            "problemMatcher": [],
             "group": {
                 "kind": "build",
-                "isDefault": true
+                "isDefault": false
             }
         },
         {
@@ -85,6 +73,33 @@
             "group": {
                 "kind": "build",
                 "isDefault": false
+            }
+        },
+        {
+            "label": "html-live",
+            "type": "shell",
+            "command": "make -f docs/Makefile html-live",
+            "options": {
+                "statusbar": {
+                    "hide": false
+                }
+            },
+            "problemMatcher": [
+                {
+                    "owner": "sphinx",
+                    "fileLocation": "absolute",
+                    "pattern": {
+                        "regexp": "^(?:.*\\.{3}\\s+)?(\\/[^:]*|[a-zA-Z]:\\\\[^:]*):(\\d+):\\s+(WARNING|ERROR):\\s+(.*)$",
+                        "file": 1,
+                        "line": 2,
+                        "severity": 3,
+                        "message": 4
+                    }
+                }
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
             }
         }
     ]
