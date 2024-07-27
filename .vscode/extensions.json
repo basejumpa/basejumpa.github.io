@@ -1,0 +1,53 @@
+{
+    "recommendations": [
+        "vscode-icons-team.vscode-icons",
+
+        "tomoki1207.pdf",
+
+        "editorconfig.editorconfig",
+        "medo64.render-crlf",
+        "oderwat.indent-rainbow",
+
+        "mhutchie.git-graph",
+        "donjayamanne.githistory",
+        "waderyan.gitblame",
+        "solomonkinard.git-blame",
+        "david-rickard.git-diff-and-merge-tool",
+        "scootersoftware.bcompare-vscode",
+        "srmeyers.git-prefix",
+        "adam-bender.commit-message-editor",
+
+        "danlevett.pattern-links",
+
+        "alefragnani.bookmarks",
+        "gruntfuggly.todo-tree",
+
+        "ms-vscode-remote.remote-containers",
+        "ms-azuretools.vscode-docker",
+
+        "rssowl.copy-relative-path-posix",
+        "brokensandals.paste-relative-path",
+
+        "ms-python.python",
+
+        "lextudio.restructuredtext",
+        "trond-snekvik.simple-rst",
+
+        "actboy168.tasks",
+        "forbeslindesay.forbeslindesay-taskrunner",
+
+        "dendron.dendron-paste-image",
+        "rulyotano.tree-extended",
+
+        "hediet.vscode-drawio",
+        "jebbs.plantuml",
+        "bierner.markdown-mermaid",
+        "tintinweb.graphviz-interactive-preview",
+
+        "ms-toolsai.jupyter",
+        "ms-toolsai.vscode-jupyter-powertoys",
+        "bpruitt-goddard.mermaid-markdown-syntax-highlighting",
+        "swyddfa.esbonio",
+        "luyuhuang.rss"
+    ]
+}

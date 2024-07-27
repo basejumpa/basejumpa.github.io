@@ -1,0 +1,91 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "clean-install",
+            "type": "shell",
+            "command": "make -f docs/Makefile clean-install",
+            "options": {
+                "statusbar": {
+                    "hide": true
+                }
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "make -f docs/Makefile clean",
+            "options": {
+                "statusbar": {
+                    "hide": false
+                }
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "html-live",
+            "type": "shell",
+            "command": "make -f docs/Makefile html-live",
+            "options": {
+                "statusbar": {
+                    "hide": false
+                }
+            },
+            "problemMatcher": [
+                {
+                    "owner": "sphinx",
+                    "fileLocation": "absolute",
+                    "pattern": {
+                        "regexp": "^(?:.*\\.{3}\\s+)?(\\/[^:]*|[a-zA-Z]:\\\\[^:]*):(\\d+):\\s+(WARNING|ERROR):\\s+(.*)$",
+                        "file": 1,
+                        "line": 2,
+                        "severity": 3,
+                        "message": 4
+                    }
+                }
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "html",
+            "type": "shell",
+            "command": "make -f docs/Makefile html",
+            "options": {
+                "statusbar": {
+                    "hide": true
+                }
+            },
+            "problemMatcher": [
+                {
+                    "owner": "sphinx",
+                    "fileLocation": "absolute",
+                    "pattern": {
+                        "regexp": "^(?:.*\\.{3}\\s+)?(\\/[^:]*|[a-zA-Z]:\\\\[^:]*):(\\d+):\\s+(WARNING|ERROR):\\s+(.*)$",
+                        "file": 1,
+                        "line": 2,
+                        "severity": 3,
+                        "message": 4
+                    }
+                }
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        }
+    ]
+}

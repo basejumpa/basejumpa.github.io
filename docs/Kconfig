@@ -1,0 +1,39 @@
+menu "doc"
+
+config DOC__TITLE
+    string "Title of the Homepage"
+    default "Alexander Mann-Wahrenberg's Homepage"
+
+config DOC__AUTHOR
+    string "Author"
+    default "Basejumpa"
+
+config DOC__PROJECT
+    string "Project"
+    default "Homepage"
+
+config DOC__LANGUAGE
+    string "Language"
+    default "en"
+
+endmenu
+
+menu "build"
+
+config BUILD__DIRS__SOURCE
+    string "Source Directory"
+    default "docs"
+
+config BUILD__DIRS__CONFIG
+    string "Config Directory"
+    default "docs"
+
+config BUILD__DIRS__BUILD
+    string "Build Directory"
+    default "out/docs"
+
+config BUILD__LIVE__PORTS__HTML
+    int "HTML Port"
+    default 1976
+
+endmenu

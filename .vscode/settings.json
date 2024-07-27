@@ -1,0 +1,70 @@
+{
+    "vsicons.presets.hideExplorerArrows": true,
+    "vsicons.presets.foldersAllDefaultIcon": true,
+
+    "files.exclude": {
+        ".venv/": true,
+        ".tools/": true,
+        ".extensions/": true,
+        ".user/": true,
+        "**/__pycache__/": true,
+        "**/*.pyc": true,
+        "Pipfile.lock": true,
+        "out/": false,
+    },
+
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 120,
+    "editor.rulers": [ 100, 120 ],
+
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+
+    "code-eol.newlineCharacter": "¬",
+    "code-eol.returnCharacter" : "¤",
+    "code-eol.crlfCharacter"   : "¤¬",
+
+    "indentRainbow.excludedLanguages": [
+        "yaml",
+        "yml",
+    ],
+
+    "gitPrefix.pattern": ".+/([A-Z]+-[0-9]+)-.+",
+    "gitPrefix.replacement": "$1: ",
+
+    "pasteImage.encodePath": "none",
+    "pasteImage.path": "${currentFileDir}/_figures",
+    "pasteImage.prefix": ".. figure:: ",
+
+    "todo-tree.general.tags": [
+        "TODO",
+        ".. todo::",
+        "[ ]",
+        "[x]"
+    ],
+
+    "esbonio.server.enabled"         : false,
+    "esbonio.server.enableDevTools"  : true,
+    "esbonio.sphinx.buildCommand"    : ["-W", "-c", "docs/", "docs", "out/docs/esbonio"],
+    "esbonio.preview.showLineMarkers": false,
+    "esbonio.preview.httpPort": 1985,
+    "esbonio.logging.level": "error",
+
+    "plantuml.jar": ".tools/plantuml.jar",
+    "plantuml.lintDiagramNoName": false,
+    "plantuml.jarArgs": [
+        // "-config", "./../plantuml.config" // Commented out because it doesn't work. Aborted my tryings...
+    ],
+    "plantuml.server": "", // Make sure not communicate with internet!
+
+
+    "markdown-pdf.plantumlServer": "",
+
+
+    "patternlinks.rules": [
+
+    ],
+
+}
