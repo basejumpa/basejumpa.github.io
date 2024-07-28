@@ -213,7 +213,7 @@ bibtex_bibfiles = [
 
 extensions.append("ablog")
 
-post_date_format = "%GCW%V.%u-%a"
+post_date_format = "%Y-%m-%d"
 post_date_format_short = post_date_format
 
 blog_authors = {
