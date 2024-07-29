@@ -4,7 +4,10 @@
 
 import os
 import platform
-import sys
+from git import Repo
+from sphinx.util.logging import getLogger
+
+logger = getLogger(__name__)
 
 _conf_location = os.path.realpath(os.path.dirname(__file__))
 
@@ -13,7 +16,27 @@ with open(".config") as f:
     exec(f.read())
 
 
-###############################################################################
+### Get SCM information #######################################################
+
+def _calculate_repo_root_dir(source_path):
+    if not source_path:
+        return '.'
+
+    # Split the path by the forward slash
+    subdirectories = source_path.split('/')
+
+    # Create the reversed path using ".."
+    reversed_path = '/'.join(['..'] * len(subdirectories))
+
+    return reversed_path
+
+
+_scm_git_branch = None
+try:
+    __repo = Repo(_calculate_repo_root_dir(CONFIG_BUILD__DIRS__SOURCE))
+    _scm_git_branch = __repo.active_branch.name
+except:
+    logger.warning(f"Couldn't get git branch.")
 
 ### SPHINX CONFIGURATION (GENERAL) ############################################
 # @see https://www.sphinx-doc.org/en/master/usage/configuration.html
@@ -84,6 +107,16 @@ html_sidebars = {
     "*": ["me.html"]
 }
 
+
+# Enable and configure edit page link if branch is known
+if _scm_git_branch:
+    html_theme_options["use_edit_page_button"] = True
+    html_context = {
+        "github_user":    "basejumpa",
+        "github_repo":    "basejumpa.github.io",
+        "github_version": _scm_git_branch,
+        "doc_path":       CONFIG_BUILD__DIRS__SOURCE,
+    }
 
 ###############################################################################
 ### EXTENSIONS AND THEIR SETTINGS #############################################
