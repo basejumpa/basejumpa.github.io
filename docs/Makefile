@@ -139,7 +139,9 @@ html: .tools/.are-up-to-date deps-are-up-to-date
 	mkdir -p "$(CONFIG_BUILD__DIRS__BUILD)/$@"
 	@echo "Building sources at $(CONFIG_BUILD__DIRS__SOURCE)"
 	poetry run sphinx-build \
+        -j 1 \
         -W \
+        --nitpicky \
         -c  "$(CONFIG_BUILD__DIRS__CONFIG)" \
             "$(CONFIG_BUILD__DIRS__SOURCE)" \
             "$(CONFIG_BUILD__DIRS__BUILD)/$@"
@@ -151,8 +153,9 @@ html-live: .tools/.are-up-to-date deps-are-up-to-date-dev
 	# Start continuous build, open browser automatically which reloads on change.
 	@echo "Building sources at $(CONFIG_BUILD__DIRS__SOURCE)"
 	poetry run sphinx-autobuild \
-        -j 10 \
+        -j 1 \
         -W \
+        --nitpicky \
         -c      "$(CONFIG_BUILD__DIRS__CONFIG)" \
         --watch "$(CONFIG_BUILD__DIRS__CONFIG)" \
                 "$(CONFIG_BUILD__DIRS__SOURCE)" \
