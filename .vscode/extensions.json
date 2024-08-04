@@ -9,6 +9,7 @@
         "oderwat.indent-rainbow",
 
         "mhutchie.git-graph",
+        "guodongsun.vscode-git-cruise",
         "donjayamanne.githistory",
         "waderyan.gitblame",
         "solomonkinard.git-blame",
@@ -42,5 +43,7 @@
         "jebbs.plantuml",
         "bierner.markdown-mermaid",
         "tintinweb.graphviz-interactive-preview",
+
+        "github.copilot"
     ]
 }
