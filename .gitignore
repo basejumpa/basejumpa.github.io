@@ -39,3 +39,6 @@ __pycache__/
 
 # Backup of configuration
 .config.old
+
+# Python translation of .config
+config.py 

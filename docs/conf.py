@@ -2,8 +2,13 @@
 
 # pylint: skip-file
 
+# Modules built into Sphinx distribution
+import re
 import os
 import platform
+import sys
+
+# Modules from additional packages
 from git import Repo
 from sphinx.util.logging import getLogger
 
@@ -12,9 +17,38 @@ logger = getLogger(__name__)
 _conf_location = os.path.realpath(os.path.dirname(__file__))
 
 ### Import project configuration ##############################################
-with open(".config") as f:
-    exec(f.read())
 
+def translate_config_file(input_file=".config", output_file="config.py"):
+    CONFIG_PREFIX = r"^CONFIG_"
+    # Define the path for the input and output files
+
+    current_directory = os.path.dirname(os.path.abspath(__file__))
+    config_file_path = os.path.join(current_directory, input_file)
+    output_file_path = os.path.join(current_directory, output_file)
+
+    # Read the input file
+    with open(config_file_path, "r") as config_file:
+        lines = config_file.readlines()
+
+    # Process the lines
+    processed_lines = []
+    for line in lines:
+        if re.match(CONFIG_PREFIX, line):
+            # Remove the CONFIG_PREFIX
+            processed_lines.append(re.sub(CONFIG_PREFIX, "", line))
+        else:
+            processed_lines.append(line)
+
+    # Write to the output file
+    with open(output_file_path, "w") as output_file:
+        output_file.writelines(processed_lines)
+
+# Call the function
+translate_config_file()
+
+# Import the generated config module
+sys.path.append(f"{os.getcwd()}")
+import config
 
 ### Get SCM information #######################################################
 
@@ -33,7 +67,7 @@ def _calculate_repo_root_dir(source_path):
 
 _scm_git_branch = None
 try:
-    __repo = Repo(_calculate_repo_root_dir(CONFIG_BUILD__DIRS__SOURCE))
+    __repo = Repo(_calculate_repo_root_dir(config.BUILD__DIRS__SOURCE))
     _scm_git_branch = __repo.active_branch.name
 except:
     logger.warning(f"Couldn't get git branch.")
@@ -45,16 +79,16 @@ except:
 ### Project information #######################################################
 # @see https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project   = CONFIG_DOC__PROJECT
-author    = CONFIG_DOC__AUTHOR
-copyright = str(CONFIG_DOC__YEAR) + ", " + CONFIG_DOC__AUTHOR
+project   = config.DOC__PROJECT
+author    = config.DOC__AUTHOR
+copyright = str(config.DOC__YEAR) + ", " + config.DOC__AUTHOR
 
 
 ### General configuration #####################################################
 # @see https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 # @see https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language
-language = CONFIG_DOC__LANGUAGE
+language = config.DOC__LANGUAGE
 
 exclude_patterns = [
 ]
@@ -70,12 +104,12 @@ numfig = True
 ### Options for HTML output ###################################################
 # @see https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_title = CONFIG_DOC__TITLE
+html_title = config.DOC__TITLE
 
 html_meta = {
-    'description': CONFIG_DOC__DESCRIPTION,
-    'keywords': 'CONFIG_DOC__KEYWORDS',
-    'author': CONFIG_DOC__AUTHOR,
+    'description': config.DOC__DESCRIPTION,
+    'keywords': 'config.DOC__KEYWORDS',
+    'author': config.DOC__AUTHOR,
 }
 
 templates_path = ["_templates"]
@@ -121,7 +155,7 @@ if _scm_git_branch:
         "github_user":    "basejumpa",
         "github_repo":    "basejumpa.github.io",
         "github_version": _scm_git_branch,
-        "doc_path":       CONFIG_BUILD__DIRS__SOURCE,
+        "doc_path":       config.BUILD__DIRS__SOURCE,
     }
 
 ###############################################################################
@@ -137,7 +171,7 @@ extensions = []
 
 extensions.append("sphinx_sitemap")
 
-html_baseurl = CONFIG_PUBLISH__BASEURL
+html_baseurl = config.PUBLISH__BASEURL
 
 
 ### Draw diagrams with "draw.io" ##############################################
