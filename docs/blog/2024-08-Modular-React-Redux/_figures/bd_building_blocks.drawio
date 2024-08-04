@@ -1,0 +1,53 @@
+<mxfile host="65bd71144e">
+    <diagram id="pP1WaJ6vC72g-cJ4vM0m" name="Page-1">
+        <mxGraphModel dx="746" dy="299" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" value="PageFrame (invisible)" style="locked=1;" parent="0"/>
+                <mxCell id="23" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="40" width="745" height="490" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="DiagramFrame" style="locked=1;" parent="0"/>
+                <mxCell id="18" value="[bd] Building Blocks" style="shape=umlFrame;whiteSpace=wrap;html=1;width=130;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;fillColor=none;" parent="11" vertex="1">
+                    <mxGeometry x="60" y="45" width="735" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Apps" style="locked=1;" parent="0"/>
+                <mxCell id="2" value="«app»&lt;br&gt;Frontend" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;verticalAlign=top;" parent="13" vertex="1">
+                    <mxGeometry x="95" y="114" width="335" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="«app»&lt;br&gt;Backend" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;verticalAlign=top;" parent="13" vertex="1">
+                    <mxGeometry x="525" y="109" width="220" height="365" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Components" style="locked=1;" parent="0"/>
+                <mxCell id="3" value="«component»&lt;br&gt;App" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="12" vertex="1">
+                    <mxGeometry x="110" y="164" width="305" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="«component»&lt;br&gt;Store" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="12" vertex="1">
+                    <mxGeometry x="110" y="399" width="305" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="«component»&lt;br&gt;«exension»&lt;br&gt;ComponentA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="12" vertex="1">
+                    <mxGeometry x="110" y="239" width="140" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="«component»&lt;br&gt;«exension»&lt;br&gt;ComponentB" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="12" vertex="1">
+                    <mxGeometry x="110" y="319" width="140" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="«component»&lt;br&gt;«exension»&lt;br&gt;ComponentC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="12" vertex="1">
+                    <mxGeometry x="274" y="239" width="140" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="«component»&lt;br&gt;«exension»&lt;br&gt;ComponentD" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="12" vertex="1">
+                    <mxGeometry x="274" y="319" width="140" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="«component»&lt;br&gt;Models" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="12" vertex="1">
+                    <mxGeometry x="540" y="395" width="185" height="56" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="«component»&lt;br&gt;App" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="12" vertex="1">
+                    <mxGeometry x="545" y="164" width="177.5" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="«component»&lt;br&gt;API" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="12">
+                    <mxGeometry x="542.5" y="239" width="180" height="135" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="SubComponents" style="locked=1;" parent="0"/>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
