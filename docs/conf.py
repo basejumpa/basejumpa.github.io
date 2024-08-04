@@ -72,6 +72,12 @@ numfig = True
 
 html_title = CONFIG_DOC__TITLE
 
+html_meta = {
+    'description': CONFIG_DOC__DESCRIPTION,
+    'keywords': 'CONFIG_DOC__KEYWORDS',
+    'author': CONFIG_DOC__AUTHOR,
+}
+
 templates_path = ["_templates"]
 
 html_static_path = ["_static"]
@@ -82,7 +88,7 @@ html_css_files = [
     "custom.css",
 ]
 
-html_extra_path = []
+html_extra_path = ["_root"]
 
 html_show_sourcelink = False
 
@@ -124,6 +130,15 @@ if _scm_git_branch:
 
 # Ordered list. Order: Most general first, then for more and more special usescases
 extensions = []
+
+
+### Create sitemap.xml for search engines ####################################
+# @see https://sphinx-sitemap.readthedocs.io
+
+extensions.append("sphinx_sitemap")
+
+html_baseurl = CONFIG_PUBLISH__BASEURL
+
 
 ### Draw diagrams with "draw.io" ##############################################
 # @see https://pypi.org/project/sphinxcontrib-drawio/

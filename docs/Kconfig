@@ -1,12 +1,20 @@
-menu "doc"
+menu "Document"
 
 config DOC__TITLE
     string "Title"
-    default "The Default Title"
+    default "Life is as EasY as YOU Take IT."
 
 config DOC__AUTHOR
     string "Author"
-    default "The Default Author"
+    default "Calidus Callidus"
+
+config DOC__DESCRIPTION
+    string "Description"
+    default "Essays of an easy life taken seriously."
+
+config DOC__KEYWORDS
+    string "Keywords"
+    default "life, essay"
 
 config DOC__YEAR
     int "Year"
@@ -22,7 +30,8 @@ config DOC__LANGUAGE
 
 endmenu
 
-menu "build"
+
+menu "Build"
 
 config BUILD__DIRS__SOURCE
     string "Source Directory"
@@ -41,3 +50,14 @@ config BUILD__LIVE__PORTS__HTML
     default 1976
 
 endmenu
+
+
+menu "Publish"
+
+config PUBLISH__BASEURL
+    string "Base URL"
+    default "https://www.some-host/some/path"
+
+endmenu
+
+

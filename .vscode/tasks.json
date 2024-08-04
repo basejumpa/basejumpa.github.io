@@ -34,7 +34,7 @@
             }
         },
         {
-            "label": "config",
+            "label": "configure",
             "type": "shell",
             "command": "make -f docs/Makefile config",
             "options": {

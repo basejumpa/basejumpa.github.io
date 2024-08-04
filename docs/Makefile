@@ -43,6 +43,7 @@ Known targets are are:
                     The environment is being installed in a virtual environment in subfolder .venv/ of the
                     local repository folder.
                     All tools except Latex, necessary for command build-pdf are installed.
+    configure     : Call configuration tool to create or modify configuration file
     html          : Make documentation in HTML format
     html-live     : Continuous (re-)build of HTML output.
                     Rebuild is being triggered by file changes inside folder CONFIG_BUILD__DIRS__BUILD. Start local webserver.
@@ -96,17 +97,6 @@ install: clean-install .tools/.are-up-to-date
 	curl -L -o .tools/plantuml.jar https://github.com/plantuml/plantuml/releases/download/v1.2024.6/plantuml-1.2024.6.jar
 	touch .tools/.are-up-to-date
 
-# Additional tool prerequisites:
-#
-# scoop install \
-#    draw.io \
-#    make \
-#    npm \
-#    miktex
-#
-# npm install -g \
-#    @mermaid-js/mermaid-cli
-
 
 .PHONY: deps-are-up-to-date
 deps-are-up-to-date: poetry.toml pyproject.toml
@@ -129,8 +119,8 @@ clean-install:
 	rm -f  poetry.lock
 
 
-.PHONY: config
-config: .tools/.are-up-to-date deps-are-up-to-date-dev
+.PHONY: configure
+configure: .tools/.are-up-to-date deps-are-up-to-date-dev
 	(cd "$(CONFIG_BUILD__DIRS__CONFIG)" ; poetry run menuconfig )
 
 
