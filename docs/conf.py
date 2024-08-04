@@ -57,10 +57,10 @@ def _calculate_repo_root_dir(source_path):
         return '.'
 
     # Split the path by the forward slash
-    subdirectories = source_path.split('/')
+    subdirectories = source_path.split(os.pathsep)
 
     # Create the reversed path using ".."
-    reversed_path = '/'.join(['..'] * len(subdirectories))
+    reversed_path = os.pathsep.join([".."] * len(subdirectories))
 
     return reversed_path
 
@@ -81,7 +81,7 @@ except:
 
 project   = config.DOC__PROJECT
 author    = config.DOC__AUTHOR
-copyright = str(config.DOC__YEAR) + ", " + config.DOC__AUTHOR
+gcopyright = ", ".join([str(config.DOC__YEAR), config.DOC__AUTHOR])
 
 
 ### General configuration #####################################################
@@ -131,6 +131,11 @@ html_theme = "pydata_sphinx_theme"
 html_theme_options = {
     "icon_links": [
         {
+            "name": "BMC",
+            "url": "https://www.buymeacoffee.com/basejumpa", # TODO: Move this to Kconfig
+            "icon": "fa-solid fa-coffee"
+        },
+        {
             "name": "GitHub",
             "url": "https://github.com/basejumpa",  # TODO: Move this to Kconfig
             "icon": "fa-brands fa-github",
@@ -139,12 +144,12 @@ html_theme_options = {
             "name": "LinkedIn",
             "url": "https://www.linkedin.com/in/basejumpa", # TODO: Move this to Kconfig
             "icon": "fa-brands fa-linkedin"
-        }
+        },
     ],
 }
 
 html_sidebars = {
-    "*": ["me.html"]
+    "*": ["me.html"],
 }
 
 
