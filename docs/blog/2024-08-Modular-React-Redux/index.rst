@@ -10,6 +10,12 @@ With this article I try to provide a comprehensive guide to setting up a client-
 
 I will walk you through the steps needed to configure Redux and manage state effectively in a React application, and discuss the design decisions made to ensure the application is easy to extend and maintain.
 
+The example is available in the repository `your-app-name <https://github.com/basejumpa/your-app-name>`_.
+
+.. contents:: Table of Contents
+    :local:
+    :depth: 2
+
 
 Requirements
 ************
@@ -60,6 +66,13 @@ We emphasize modularity and extensibility. Each component manages its own state 
     Building Blocks
 
 
+.. _fig_slices:
+
+.. drawio-figure:: _figures/slices.drawio
+
+    Components contribute slices to the store
+
+
 Design Alternatives Considered
 ==============================
 
@@ -104,6 +117,9 @@ Traceability Reqs to Architectural Elements
 
 Detailed Design & Construction
 ******************************
+
+
+
 
 Directory structure
 ===================
@@ -294,8 +310,8 @@ Component ComponentD
     :caption: src/components/ComponentD/slice.js
 
 
-Running the Application
-***********************
+Start the Application
+*********************
 
 Start your React application::
 
