@@ -32,6 +32,7 @@ Project Structure
 Below is the directory structure of our project:
 
 .. code-block:: text
+    :linenos:
 
     /src
       /components
@@ -95,10 +96,12 @@ Create the Redux store configuration files.
 
 .. literalinclude:: _listings/store/reducerManager.js
    :language: jsx
+    :linenos:
    :caption: store/reducerManager.js
 
 .. literalinclude:: _listings/store/store.js
    :language: jsx
+    :linenos:
    :caption: store/store.js
 
 Configure Redux in React
@@ -108,6 +111,7 @@ Set up Redux in the React `App.js` file.
 
 .. literalinclude:: _listings/App.js
    :language: jsx
+    :linenos:
    :caption: App.js
 
 Create Redux Slices
@@ -119,6 +123,7 @@ Example slice file for component A.
 
 .. literalinclude:: _listings/components/A/slice.js
    :language: jsx
+    :linenos:
    :caption: components/A/slice.js
 
 Create Components
@@ -130,6 +135,7 @@ Example component file for component A.
 
 .. literalinclude:: _listings/components/A/component.js
    :language: jsx
+    :linenos:
    :caption: components/A/component.js
 
 Main Entry Point
@@ -139,6 +145,7 @@ Set up the main entry point to use the components.
 
 .. literalinclude:: _listings/index.js
    :language: jsx
+    :linenos:
    :caption: index.js
 
 Running the Application
@@ -147,6 +154,7 @@ Running the Application
 Start your React application:
 
 .. code-block:: bash
+    :linenos:
 
     npm start
 
