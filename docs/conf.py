@@ -7,6 +7,7 @@ import re
 import os
 import platform
 import sys
+import time
 
 # Modules from additional packages
 from git import Repo
@@ -20,28 +21,32 @@ _conf_location = os.path.realpath(os.path.dirname(__file__))
 
 def translate_config_file(input_file=".config", output_file="config.py"):
     CONFIG_PREFIX = r"^CONFIG_"
-    # Define the path for the input and output files
 
+    # Define the path for the input and output files
     current_directory = os.path.dirname(os.path.abspath(__file__))
     config_file_path = os.path.join(current_directory, input_file)
     output_file_path = os.path.join(current_directory, output_file)
 
-    # Read the input file
-    with open(config_file_path, "r") as config_file:
-        lines = config_file.readlines()
+    # Check if the output file needs to be created or updated
+    if (not os.path.exists(output_file_path) or
+        os.path.getmtime(config_file_path) > os.path.getmtime(output_file_path)):
 
-    # Process the lines
-    processed_lines = []
-    for line in lines:
-        if re.match(CONFIG_PREFIX, line):
-            # Remove the CONFIG_PREFIX
-            processed_lines.append(re.sub(CONFIG_PREFIX, "", line))
-        else:
-            processed_lines.append(line)
+        # Read the input file
+        with open(config_file_path, "r") as config_file:
+            lines = config_file.readlines()
 
-    # Write to the output file
-    with open(output_file_path, "w") as output_file:
-        output_file.writelines(processed_lines)
+        # Process the lines
+        processed_lines = []
+        for line in lines:
+            if re.match(CONFIG_PREFIX, line):
+                # Remove the CONFIG_PREFIX
+                processed_lines.append(re.sub(CONFIG_PREFIX, "", line))
+            else:
+                processed_lines.append(line)
+
+        # Write to the output file
+        with open(output_file_path, "w") as output_file:
+            output_file.writelines(processed_lines)
 
 # Call the function
 translate_config_file()
