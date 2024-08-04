@@ -132,12 +132,12 @@ html_theme_options = {
     "icon_links": [
         {
             "name": "GitHub",
-            "url": "https://github.com/basejumpa",
+            "url": "https://github.com/basejumpa",  # TODO: Move this to Kconfig
             "icon": "fa-brands fa-github",
         },
         {
             "name": "LinkedIn",
-            "url": "https://www.linkedin.com/in/basejumpa",
+            "url": "https://www.linkedin.com/in/basejumpa", # TODO: Move this to Kconfig
             "icon": "fa-brands fa-linkedin"
         }
     ],
@@ -152,8 +152,8 @@ html_sidebars = {
 if _scm_git_branch:
     html_theme_options["use_edit_page_button"] = True
     html_context = {
-        "github_user":    "basejumpa",
-        "github_repo":    "basejumpa.github.io",
+        "github_user":    "basejumpa",           # TODO: Move this to Kconfig: config.DOC__SCM_OWNER,
+        "github_repo":    "basejumpa.github.io", # TODO: Move this to Kconfig: config.DOC__SCM_REPO,
         "github_version": _scm_git_branch,
         "doc_path":       config.BUILD__DIRS__SOURCE,
     }
@@ -299,9 +299,10 @@ post_date_format = "%Y-%m-%d"
 post_date_format_short = post_date_format
 
 blog_authors = {
-    "basejumpa": ("Alexander Mann-Wahrenberg", 'https://github.com/basejumpa'),
+#    config.DOC__AUTHOR__NICKNAME: (config.DOC__AUTHOR, config.DOC__AUTHOR__URL),
+    "basejumpa": ("Alexander Mann-Wahrenberg", 'https://github.com/basejumpa'), # TODO: Move this to Kconfig
 }
-blog_default_author = "basejumpa"
+blog_default_author = "basejumpa" # TODO: Move this to Kconfig: config.DOC__AUTHOR__NICKNAME
 
 html_sidebars["blog/**"] = [
     "ablog/postcard.html",
