@@ -42,7 +42,7 @@ Release Roadmap
 Releases and the Requirements to satisfy::
 
         Rel_1           Rel_2       Rel_3       Rel_4
-    ---|---------------|-----------|-----------|------
+    ---|---------------|-----------|-----------|--------->
 
         Req_01          Req_01      Req_01      Req_01
         Req_02          Req_02      Req_02      Req_02
