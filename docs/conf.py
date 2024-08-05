@@ -18,6 +18,7 @@ logger = getLogger(__name__)
 _conf_location = os.path.realpath(os.path.dirname(__file__))
 
 ### Import project configuration ##############################################
+# @see https://www.kernel.org/doc/html/next/kbuild/kconfig-language.html
 
 def translate_config_file(input_file=".config", output_file="config.py"):
     CONFIG_PREFIX = r"^CONFIG_"
@@ -46,6 +47,8 @@ def translate_config_file(input_file=".config", output_file="config.py"):
 
         # Write to the output file
         with open(output_file_path, "w") as output_file:
+            output_file.write("n = False\n")
+            output_file.write("y = True\n")
             output_file.writelines(processed_lines)
 
 # Call the function
@@ -54,6 +57,7 @@ translate_config_file()
 # Import the generated config module
 sys.path.append(f"{os.getcwd()}")
 import config
+
 
 
 ### Get SCM information #######################################################
