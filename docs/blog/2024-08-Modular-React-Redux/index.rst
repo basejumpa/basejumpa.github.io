@@ -207,8 +207,8 @@ Install packages (adds additional external dependencies)::
         redux-logger \
 
 
-Component App
-=============
+«component» App
+===============
 
 .. literalinclude:: _listings/src/index.js
     :language: jsx
@@ -221,8 +221,8 @@ Component App
     :caption: src/App.js
 
 
-Component Store
-===============
+«component» Store
+=================
 
 .. literalinclude:: _listings/src/store/index.js
     :language: jsx
@@ -259,8 +259,8 @@ File `backend/__init__.py` is empty.
     :caption: backend/app.py
 
 
-Component Models
-----------------
+«component» Models
+------------------
 
 .. literalinclude:: _listings/backend/models.py
     :language: python
@@ -282,8 +282,8 @@ Extensions
 
 Each extension manages its own state and reducers, which are dynamically registered to the store.
 
-Component ComponentA
---------------------
+«component» ComponentA
+----------------------
 
 .. literalinclude:: _listings/src/components/ComponentA/index.js
     :language: jsx
@@ -297,8 +297,8 @@ Component ComponentA
     :caption: src/components/ComponentA/slice.js
 
 
-Component ComponentB
---------------------
+«component» ComponentB
+----------------------
 
 .. literalinclude:: _listings/src/components/ComponentB/index.js
     :language: jsx
@@ -312,8 +312,8 @@ Component ComponentB
     :caption: src/components/ComponentB/slice.js
 
 
-Component ComponentC
---------------------
+«component» ComponentC
+----------------------
 
 .. literalinclude:: _listings/src/components/ComponentC/index.js
     :language: jsx
@@ -327,8 +327,8 @@ Component ComponentC
     :caption: src/components/ComponentC/slice.js
 
 
-Component ComponentD
---------------------
+«component» ComponentD
+----------------------
 
 .. literalinclude:: _listings/src/components/ComponentD/index.js
     :language: jsx
