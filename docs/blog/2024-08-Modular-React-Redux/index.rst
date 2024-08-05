@@ -3,14 +3,16 @@
     :language: English
 
 
-React with Redux the Extensible Way
-###################################
+Design Study - React+Redux the Extensible Way
+#############################################
 
-With this article I try to provide a comprehensive guide to setting up a client-side rendering (CSR) React application using Redux, with a focus on modularity and extensibility.
+With this article I try to create an extensible version of a Web Application based on React and Redux.
 
-I will walk you through the steps needed to configure Redux and manage state effectively in a React application, and discuss the design decisions made to ensure the application is easy to extend and maintain.
+.. figure:: _figures/ui.png
 
-The example is available in the repository `your-app-name <https://github.com/basejumpa/your-app-name>`_.
+To do so I create first a small example with a few requirements. Those requirements shall be satisfied step by step according the release roadmap.
+
+The sources are also available in the repository `your-app-name <https://github.com/basejumpa/your-app-name>`_. The commit history reflects rougly the release roadmap.
 
 .. contents:: Table of Contents
     :local:
@@ -54,23 +56,57 @@ Releases and the Requirements to satisfy::
 Architectural Design
 ********************
 
-Design
-======
+Concept
+============
+
+The application is built using a modular architecture that allows for easy extension and maintenance. Each component manages its own state and reducers, which are dynamically registered to the store. This approach ensures that the application can scale easily as new features are added.
+
+.. _fig_slices:
+
+.. drawio-figure:: _figures/swad_concept.drawio
+
+    Components contribute slices to the store
+
+
+Building Block View
+===================
 
 We emphasize modularity and extensibility. Each component manages its own state and reducers, which are dynamically registered to the store. This allows the application to scale easily as new features are added.
 
 .. _fig_bd_building_blocks:
 
-.. drawio-figure:: _figures/bd_building_blocks.drawio
+.. drawio-figure:: _figures/bd_swad_building_blocks.drawio
 
-    Building Blocks
+    Building Block View
+
+.. todo:: Add description of interfaces between blocks
 
 
-.. _fig_slices:
+Runtime View
+============
 
-.. drawio-figure:: _figures/slices.drawio
+.. todo:: Add runtime view
 
-    Components contribute slices to the store
+    Sequence Diagrams for the "good" and "bad" scenarios
+
+    "Good" scenarios:
+
+    - «event» Frontend (re)-load
+    - «event» Backend start
+    - «event» click on 1st button
+    - «event» click on 2nd button
+
+    "Bad" scenarios:
+
+    - «event» click on 2nd button while API is down
+
+Scenario «event» Frontend (re)-load
+-----------------------------------
+
+.. uml:: _figures/sd_swad_frontend_load.uml
+    :caption: Frontend (re)-load
+
+.. todo:: Finish Scenario «event» Frontend (re)-load
 
 
 Design Alternatives Considered
@@ -117,9 +153,6 @@ Traceability Reqs to Architectural Elements
 
 Detailed Design & Construction
 ******************************
-
-
-
 
 Directory structure
 ===================
@@ -309,9 +342,11 @@ Component ComponentD
     :linenos:
     :caption: src/components/ComponentD/slice.js
 
+User Guide
+**********
 
-Start the Application
-*********************
+Application Start
+=================
 
 Start your React application::
 
@@ -323,9 +358,22 @@ Start your React application::
 
     # Ready to go!
 
+Usage
+=====
+
+.. todo:: Add short description on usage
+
+.. figure:: _figures/ui.png
 
 
 Conclusion
 **********
 
+.. raw:: html
+
+    <a href="https://www.buymeacoffee.com/basejumpa"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=basejumpa&button_colour=BD5FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
+
 .. todo:: Add conclusion
+
+
+

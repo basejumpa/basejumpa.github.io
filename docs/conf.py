@@ -55,6 +55,7 @@ translate_config_file()
 sys.path.append(f"{os.getcwd()}")
 import config
 
+
 ### Get SCM information #######################################################
 
 def _calculate_repo_root_dir(source_path):

@@ -1,0 +1,8 @@
+@startuml
+actor User
+box Frontend
+participant App
+end box
+
+User --> App : load
+@enduml
