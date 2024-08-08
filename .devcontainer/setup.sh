@@ -36,6 +36,11 @@ fi
 $SUDO apt-get install -y xvfb
 
 
+### Install java needed by plantuml ###########################################
+
+$SUDO sudo apt install -y default-jre
+
+
 ### Install mermaid command line tool #########################################
 
 # Install nodejs (brings package manager npm with it)
