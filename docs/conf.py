@@ -141,11 +141,6 @@ html_theme = "pydata_sphinx_theme"
 html_theme_options = {
     "icon_links": [
         {
-            "name": "BMC",
-            "url": "https://www.buymeacoffee.com/basejumpa", # TODO: Move this to Kconfig
-            "icon": "fa-solid fa-coffee"
-        },
-        {
             "name": "GitHub",
             "url": "https://github.com/basejumpa",  # TODO: Move this to Kconfig
             "icon": "fa-brands fa-github",

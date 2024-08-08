@@ -2,14 +2,18 @@
 {% if secondary_sidebar_items -%}
 {# Note: secondary_sidebar_items is set by set_secondary_sidebar_items() in utils.py #}
 {% for toc_item in secondary_sidebar_items %}
-  <div class="sidebar-secondary-item">{% include toc_item %}</div>
+    <div class="sidebar-secondary-item">{% include toc_item %}</div>
 {% endfor %}
 {%- endif %}
-  <div class="sidebar-secondary-item">
-    <form action="https://www.paypal.com/donate" method="post" target="_top">
-    <input type="hidden" name="hosted_button_id" value="DDV9AQBFJNMVU" />
-    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-    <img alt="" border="0" src="https://www.paypal.com/en_DE/i/scr/pixel.gif" width="1" height="1" />
-    </form>
-  </div>
+    <div class="tocsection editthispage">
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+            <input type="hidden" name="hosted_button_id" value="DDV9AQBFJNMVU" />
+            <button type="submit"
+                name="submit"
+                title="Buy me a coffee, a fast food meal xor a Pizza via PayPal. I appreciate it!"
+                style="background:none; border:none; ; cursor:pointer; color: #008080; ">
+                &nbsp;&nbsp;<i class="fas fa-coffee"></i> Buy me a Coffee
+            </button>
+        </form>
+    </div>
 </div>
