@@ -152,7 +152,7 @@ html_theme_options = {
         },
         {
             "name": "LinkedIn",
-            "url": "https://www.linkedin.com/in/basejumpa", # TODO: Move this to Kconfig
+            "url": "https://www.linkedin.com/in/mann-wahrenberg", # TODO: Move this to Kconfig
             "icon": "fa-brands fa-linkedin"
         },
     ],
