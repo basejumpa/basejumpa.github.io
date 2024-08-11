@@ -1,9 +1,10 @@
 {%- extends "pydata_sphinx_theme/layout.html" %}
 
 {% block docs_body %}
-{{ super() }}
-<!-- Add a comment box underneath the page's content -->
-<script src="https://giscus.app/client.js"
+    {{ super() }}
+
+    <!-- Add a comment box underneath the page's content -->
+    <script src="https://giscus.app/client.js"
         data-repo="basejumpa/basejumpa.github.io"
         data-repo-id="MDEwOlJlcG9zaXRvcnk3MDIxNDIzMQ=="
         data-category-id="DIC_kwDOBC9iV84ChOwN"
@@ -16,6 +17,7 @@
         data-lang="en"
         data-loading="lazy"
         crossorigin="anonymous"
-        async>
-</script>
+        async
+    />
+
 {% endblock %}
