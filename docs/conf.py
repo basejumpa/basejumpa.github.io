@@ -141,6 +141,11 @@ html_theme = "pydata_sphinx_theme"
 html_theme_options = {
     "icon_links": [
         {
+            "name": "Paypal",
+            "url": "https://www.paypal.com/donate/?hosted_button_id=DDV9AQBFJNMVU", # TODO: Move this to Kconfig
+            "icon": "fa-solid fa-coffee"
+        },
+        {
             "name": "GitHub",
             "url": "https://github.com/basejumpa",  # TODO: Move this to Kconfig
             "icon": "fa-brands fa-github",
