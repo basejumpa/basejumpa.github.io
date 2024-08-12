@@ -320,6 +320,7 @@ blog_authors = {
 blog_default_author = "basejumpa" # TODO: Move this to Kconfig: config.DOC__AUTHOR__NICKNAME
 
 html_sidebars["blog/**"] = [
+    "me.html",
     "ablog/postcard.html",
     "ablog/recentposts.html",
     "ablog/tagcloud.html",
