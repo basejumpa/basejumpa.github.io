@@ -11,7 +11,7 @@ Die Projektseite mit den Übungsaufgaben zum Erlernen der Grundkenntnisse ist on
 
 Mir hat die Zusammenarbeit mit den Jungs im Projekt, welches ich im Rahmen der Projekttage anbiete, mal wieder sehr viel Spaß gemacht.
 
-Was die jungen Daniel Düsentriebe ohne Vorkenntnisse innerhalb von wenigen Stunden zustandegebracht ist klasse, finde ich:
+Was die jungen Daniel Düsentriebe ohne Vorkenntnisse auf diesem Gebiet innerhalb von wenigen Stunden beeindruckendes erschaffen haben seht Ihr in diesem Video:
 
 ..  youtube:: Qgba6PwH8NE
     :align: center
