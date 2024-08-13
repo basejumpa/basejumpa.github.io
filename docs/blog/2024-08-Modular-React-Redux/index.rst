@@ -2,6 +2,8 @@
     :tags: React, Redux, Software Architecture, Extensibility, Modularity
     :language: English
 
+.. _sec_modular_react_redux:
+
 Design Study - React+Redux the Extensible Way
 #############################################
 
