@@ -166,16 +166,16 @@ Directory structure
             reducerManager.js
             store.js
         /components
-            /ComponentsA
+            /ComponentA
                 index.js
                 slice.js
-            /ComponentsB
+            /ComponentB
                 index.js
                 slice.js
-            /ComponentsC
+            /ComponentC
                 index.js
                 slice.js
-            /ComponentsD
+            /ComponentD
                 index.js
                 slice.js
     ---------------------------------------
