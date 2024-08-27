@@ -44,6 +44,7 @@
         "bierner.markdown-mermaid",
         "tintinweb.graphviz-interactive-preview",
 
-        "github.copilot"
+        "github.copilot",
+        "ms-vscode-remote.vscode-remote-extensionpack"
     ]
 }

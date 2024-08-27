@@ -3,8 +3,10 @@
     :language: English
 
 
-Mini-Project: WeBalance
+Mini-Project: WePosture
 #######################
+
+Good posture through equilibrium.
 
 **Let's tinker a gadget!**
 
@@ -79,6 +81,7 @@ Resources
 
 - `Arduino Scale with HX711 and 50kg Bathroom Scale Load Cells | Step by Step Guide | Connecting one load cell <https://youtu.be/LIuf2egMioA?si=IAhVZdv8fffR8lHE&t=46>`__
 - `HX711 class to sample a 24-bit ADC (or multiple) with Python 3 on a Rasperry Pi Zero, 3 or 4 <https://pypi.org/project/hx711-multi/>`__
+- `Raspberry Pi Pinout <https://pinout.xyz/>`__
 - `PipX statt Pip <https://gnulinux.ch/pipx-statt-pip>`__
 
 
@@ -87,13 +90,9 @@ Sketches
 
 Here some sketches:
 
-.. figure:: _figures/sketch_1.png
+.. figure:: _figures/bd_weposture.png
 
-    Parts of the content is obsolete since RPI5 has been chosen and 4 HX711 are needed.
-
-.. figure:: _figures/sketch_2.png
-
-    Parts of the content is obsolete since RPI5 has been chosen and 4 HX711 are needed.
+.. figure:: _figures/board_with_feed_and_loadcells.png
 
 
 Expert Dialogs
@@ -114,13 +113,21 @@ Here some GPT-4o chats:
 Insights in Work-In-Progress
 ****************************
 
-.. figure:: _figures/balance_board.jpg
+.. figure:: _figures/balance_board.png
 
     Balance board with top side made of glass waiting to get connected to the four HX711
 
-.. figure:: _figures/rpi_and_circuit.jpg
+.. figure:: _figures/sketch_ui_ux.png
 
-    RPI connected to 4 HX711, Power, Monitor, Keyboard and Mouse with 1k Resistors waiting to get connected
+    Sketch on UI/UX
+
+.. figure:: _figures/rpi_zero_2w_and_circuit.png
+
+    RPI Zero 2W connected to 6 HX711, Power, Monitor, Keyboard and Mouse with 1k Resistors waiting to get connected
+
+.. figure:: _figures/rpi_5_and_circuit.png
+
+    RPI 5 connected to 6 HX711, Power, Monitor, Keyboard and Mouse with 1k Resistors waiting to get connected
 
 Software (Repository: https://github.com/basejumpa/WeBalance ) already acquires data. Here the continuous output ::
 
