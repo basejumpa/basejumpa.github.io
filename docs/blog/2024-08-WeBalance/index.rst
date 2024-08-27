@@ -1,5 +1,5 @@
 .. post:: 2024-08-19
-    :tags: Wii, Balance Board, HX711, Load Cell, Raspberry Pi, ESP32, FARM-Stack, React, Redux, MongoDB, FastAPI, MongoDB,  OpenAPI, Kiota 
+    :tags: Wii, Balance Board, HX711, Load Cell, Raspberry Pi, ESP32, FARM-Stack, React, Redux, MongoDB, FastAPI, MongoDB,  OpenAPI, Kiota
     :language: English
 
 
@@ -47,7 +47,7 @@ Production (and Development):
 - Enough Jumper wires male-male
 - Enough Jumper wires male-female
 - 1x `Ebay: Digital Scale Set (4x Load Cell 50kg each, 1x Amplifier HX711) <https://www.ebay.de/itm/234796576410?_trkparms=amclksrc%3DITM%26aid%3D1110006%26algo%3DHOMESPLICE.SIM%26ao%3D1%26asc%3D20200818143230%26meid%3Db5a09e7cc4f748fc8f013a86210382b7%26pid%3D101224%26rk%3D4%26rkt%3D5%26sd%3D386339206392%26itm%3D234796576410%26pmt%3D1%26noa%3D1%26pg%3D4429486%26algv%3DDefaultOrganicWebV9BertRefreshRankerWithCassiniEmbRecall%26brand%3DMarkenlos&_trksid=p4429486.c101224.m-1>`__
-- 3x `Ebay: Amplifier HX711 <https://www.ebay.de/itm/293840537869?_nkw=HX711&itmmeta=01J5MQ8NQHS3Y0ZFJKER1DWYD7&hash=item446a42c90d:g:PgYAAOSwkH5kLTdk&itmprp=enc%3AAQAJAAAA4HoV3kP08IDx%2BKZ9MfhVJKlUkfHyxwr%2BcpjnFHyV18f%2FXZVUImoDurlDUvWO7FGWzAvbALLgRSUeKFzUiAI1BU23DXZelMUpHoeSfk3Jc6RdHAFSf6rsXMGCfvNVir3ITwbpHFq0f4JaV1lmQOztEQfbx6%2B22gKCoyXXevfquYPC4Z5Invd6KXuPmhFXapL84s9R2ub3JXgjbuU1m9GApfa6P6a8gqTIUPOrSPDnNK%2BaF%2Br3cLpOva0R5QmUomA9cDOUuEDB1rq%2FbqetKhF8VQbN%2B5e5s87Ztk5DtmhsX5Z4%7Ctkp%3ABFBM9tuil61k>`__ 
+- 3x `Ebay: Amplifier HX711 <https://www.ebay.de/itm/293840537869?_nkw=HX711&itmmeta=01J5MQ8NQHS3Y0ZFJKER1DWYD7&hash=item446a42c90d:g:PgYAAOSwkH5kLTdk&itmprp=enc%3AAQAJAAAA4HoV3kP08IDx%2BKZ9MfhVJKlUkfHyxwr%2BcpjnFHyV18f%2FXZVUImoDurlDUvWO7FGWzAvbALLgRSUeKFzUiAI1BU23DXZelMUpHoeSfk3Jc6RdHAFSf6rsXMGCfvNVir3ITwbpHFq0f4JaV1lmQOztEQfbx6%2B22gKCoyXXevfquYPC4Z5Invd6KXuPmhFXapL84s9R2ub3JXgjbuU1m9GApfa6P6a8gqTIUPOrSPDnNK%2BaF%2Br3cLpOva0R5QmUomA9cDOUuEDB1rq%2FbqetKhF8VQbN%2B5e5s87Ztk5DtmhsX5Z4%7Ctkp%3ABFBM9tuil61k>`__
 - 4x `Thingiverse| Half Bridge Load Sensor mount <https://www.thingiverse.com/thing:4873113>`__
 
 
@@ -66,7 +66,7 @@ Production (and Development):
 
 - `Raspberry Pi OS with desktop and recommended software (64-bit) Release date: July 4th 2024, Kernel version 6.6, Debian version: 12 (bookworm) <https://downloads.raspberrypi.com/raspios_full_arm64/images/raspios_full_arm64-2024-07-04/2024-07-04-raspios-bookworm-arm64-full.img.xz?_gl=1*eiaaxh*_ga*MTI2MzMyODY0MC4xNzI0Mzc5MzQy*_ga_22FD70LWDS*MTcyNDY0MzgyNi4xLjAuMTcyNDY0MzgyNi4wLjAuMA..>`__
 - Python 3 12.5
-- hx711-multi 1.4.1 
+- hx711-multi 1.4.1
 
 
 Development (in addition):
@@ -90,7 +90,7 @@ Sketches
 
 Here some sketches:
 
-.. figure:: _figures/bd_weposture.png
+.. drawio-figure:: _figures/bd_weposture.drawio
 
 .. figure:: _figures/board_with_feed_and_loadcells.png
 
