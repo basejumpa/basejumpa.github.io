@@ -10,6 +10,7 @@ Welcome to my homepage [#]_.
     blog/index
     about/index
     bibliography/index
+    imprint/index
 
 .. postlist:: 5
     :sort:
