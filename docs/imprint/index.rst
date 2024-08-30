@@ -1,7 +1,11 @@
-Imprint
-#######
+Imprint, Disclaimer & License
+#############################
 
-*(Impressum)*
+*(Impressum, Haftungsausschluss & Lizenz)*
+
+.. contents:: On this page
+    :local:
+    :depth: 2
 
 Angaben gemäß § 5 TMG
 *********************
@@ -73,12 +77,13 @@ Meine E-Mail-Adresse finden Sie oben im Impressum.
 
 
 Haftungsausschluss
-==================
+******************
 
- *(Disclaimer)*
+*(Disclaimer)*
+
 
 Inhalt des Onlineangebots
--------------------------
+=========================
 
 *(Content of the Online Offer)*
 
@@ -88,11 +93,11 @@ Die Inhalte meiner Seiten wurden mit größter Sorgfalt erstellt. Für die Richt
 
 
 Haftung für Links
------------------
+=================
 
 *(Liability for Links)*
 
-Mein Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte ich keinen Einfluss haben. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.
+Mein Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.
 
 *(My offer contains links to external third-party websites over whose content I have no influence. Therefore, I cannot assume any liability for these external contents. The respective provider or operator of the sites is always responsible for the content of the linked sites. The linked sites were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking. However, a permanent content control of the linked pages is not reasonable without concrete evidence of an infringement. Upon becoming aware of legal violations, I will remove such links immediately.)*
 
@@ -102,16 +107,47 @@ Urheberrecht
 
 *(Copyright)*
 
-Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+Die durch mich erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen meiner schriftlichen Zustimmung. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht von mir erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitte ich um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Inhalte umgehend entfernen.
 
-*(The content and works created by the site operators on these pages are subject to German copyright law. The reproduction, editing, distribution, and any kind of use outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use. Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is marked as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly. Upon becoming aware of legal violations, we will remove such content immediately.)*
+*(The content and works created by me on these pages are subject to German copyright law. The reproduction, editing, distribution, and any kind of use outside the limits of copyright law require my written consent. Downloads and copies of this site are only permitted for private, non-commercial use. Insofar as the content on this site was not created by me, the copyrights of third parties are respected. In particular, third-party content is marked as such. Should you nevertheless become aware of a copyright infringement, please inform me accordingly. Upon becoming aware of legal violations, I will remove such content immediately.)*
 
 
 Datenschutz
------------
+===========
 
 *(Data Protection)*
 
-Die Nutzung meiner Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf meinen Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Ich weise darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.
+Die Nutzung meiner Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf meinen Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Ich weise darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Ich behalte mir ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.
 
-*(The use of my website is usually possible without providing personal data. As far as personal data (e.g., name, address, or email addresses) are collected on my pages, this is always done on a voluntary basis, as far as possible. This data will not be passed on to third parties without your express consent. I would like to point out that data transmission on the Internet (e.g., communication by email) can have security gaps. Complete protection of the data from access by third parties is not possible. The use of contact data published within the framework of the imprint obligation by third parties for sending unsolicited advertising and information material is hereby expressly prohibited. The operators of the pages expressly reserve the right to take legal action in the event of unsolicited sending of advertising information, such as spam emails.)*
+*(The use of my website is usually possible without providing personal data. As far as personal data (e.g., name, address, or email addresses) are collected on my pages, this is always done on a voluntary basis, as far as possible. This data will not be passed on to third parties without your express consent. I would like to point out that data transmission on the Internet (e.g., communication by email) can have security gaps. Complete protection of the data from access by third parties is not possible. The use of contact data published within the framework of the imprint obligation by third parties for sending unsolicited advertising and information material is hereby expressly prohibited. I expressly reserve the right to take legal action in the event of unsolicited sending of advertising information, such as spam emails.)*
+
+
+Lizenzierung
+============
+
+*(Licensing)*
+
+Die Inhalte dieser Webseite stehen unter der Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz (**CC BY-SA 4.0**), sofern nicht anders angegeben.
+
+*(The content of this website is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0), unless otherwise stated.)*
+
+
+Ausnahmen von der Lizenz
+========================
+
+*(License Exceptions)*
+
+Bestimmte Inhalte, wie zum Beispiel Marken, Logos oder Inhalte Dritter, unterliegen möglicherweise anderen Lizenzen. Diese sind entsprechend gekennzeichnet und nicht von der CC BY-SA 4.0 Lizenz abgedeckt.
+
+*(Certain content, such as trademarks, logos, or third-party content, may be subject to different licenses. These are marked accordingly and are not covered by the CC BY-SA 4.0 license.)*
+
+
+Namensnennung
+=============
+
+*(Attribution)*
+
+- Namen des Autors *(Author's Name)*: **Alexander Mann-Wahrenberg**
+- Titel der Originalarbeit *(Title of the Original Work)*: **Basejumpa's Bites**
+- Link zur Originalarbeit *(Link to the original work)*: https://basejumpa.github.io/
+- Lizenziert unter der Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz (**CC BY-SA 4.0**) *(Licensed under the Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0).)*

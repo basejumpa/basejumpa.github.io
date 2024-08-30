@@ -194,7 +194,7 @@ menu "Styling"
 
 config STYLING__COLOR_PRIMARY
     string "Primary Color"
-    default ""
+    default "grey"
     help
         The primary color of the document.
         Leave empty for default color.
@@ -204,7 +204,7 @@ config STYLING__COLOR_PRIMARY
 
 config STYLING__COLOR_ACCENT
     string "Accent Color"
-    default ""
+    default "amber"
     help
         The accent color of the document.
         Leave empty for default color.
