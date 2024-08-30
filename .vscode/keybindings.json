@@ -15,8 +15,7 @@
 //################################################################
 
 {
-    "args": [
-        "--no-sandbox",
-        "--disable-setuid-sandbox"
-    ]
+    "key": "shift+win+f",
+    "command": "extension.pasteImage",
+    "when": "editorTextFocus"
 }

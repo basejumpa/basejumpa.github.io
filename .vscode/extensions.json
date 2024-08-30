@@ -1,50 +1,65 @@
+//################################################################
+//#                                                              #
+//#  This file is part of hermesbaby                             #
+//#                       the software engineer's typewriter     #
+//#                                                              #
+//#  Copyright (c) 2024 Alexander Mann-Wahrenberg (basejumpa)    #
+//#                                                              #
+//#      https://github.com/basejumpa                            #
+//#                                                              #
+//#  License(s)                                                  #
+//#                                                              #
+//#  - MIT for contents used as software                         #
+//#  - CC BY-SA-4.0 for contents used as method or otherwise     #
+//#                                                              #
+//################################################################
+
 {
     "recommendations": [
         "vscode-icons-team.vscode-icons",
-
-        "tomoki1207.pdf",
+        "johnpapa.vscode-peacock",
 
         "editorconfig.editorconfig",
         "medo64.render-crlf",
+        "miku3920.vscode-render-special-chars",
         "oderwat.indent-rainbow",
-
-        "mhutchie.git-graph",
-        "guodongsun.vscode-git-cruise",
-        "donjayamanne.githistory",
-        "waderyan.gitblame",
-        "solomonkinard.git-blame",
-        "david-rickard.git-diff-and-merge-tool",
-        "srmeyers.git-prefix",
-        "adam-bender.commit-message-editor",
-
-        "danlevett.pattern-links",
+        "mechatroner.rainbow-csv",
+        "ionutvmi.path-autocomplete",
 
         "alefragnani.bookmarks",
         "gruntfuggly.todo-tree",
 
-        "ms-vscode-remote.remote-containers",
-        "ms-azuretools.vscode-docker",
+        "mhutchie.git-graph",
+        "adam-bender.commit-message-editor",
+        "solomonkinard.git-blame",
+        "david-rickard.git-diff-and-merge-tool",
+        "ryu1kn.partial-diff",
+        "scootersoftware.bcompare-vscode",
 
-        "rssowl.copy-relative-path-posix",
-        "brokensandals.paste-relative-path",
-
-        "ms-python.python",
+        "tomoki1207.pdf"
 
         "lextudio.restructuredtext",
         "trond-snekvik.simple-rst",
+        "swyddfa.esbonio",
 
         "actboy168.tasks",
         "forbeslindesay.forbeslindesay-taskrunner",
 
         "dendron.dendron-paste-image",
-        "rulyotano.tree-extended",
-
         "hediet.vscode-drawio",
+
         "jebbs.plantuml",
         "bierner.markdown-mermaid",
+        "bpruitt-goddard.mermaid-markdown-syntax-highlighting",
         "tintinweb.graphviz-interactive-preview",
 
-        "github.copilot",
-        "ms-vscode-remote.vscode-remote-extensionpack"
+        "rulyotano.tree-extended",
+
+        "danlevett.pattern-links",
+
+        "ionutvmi.path-autocomplete",
+        "rssowl.copy-relative-path-posix",
+        "brokensandals.paste-relative-path",
+
     ]
 }
