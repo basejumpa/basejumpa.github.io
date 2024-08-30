@@ -53,6 +53,7 @@
         "poetry.toml": true,
         "docs/conf.py": true,
         "docs/Kconfig": true,
+        "docs/config.old": true,
         "docs/plantuml.config": true,
         "docs/puppeteer-config.json": true,
         "sphinx-contrib/": true,
