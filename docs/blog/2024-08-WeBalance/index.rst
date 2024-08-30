@@ -6,15 +6,15 @@
 Mini-Project: WePosture
 #######################
 
-Good posture through equilibrium.
+Good posture through equilibrium. **WIP - Work-In-Progress**
 
-**Let's tinker a gadget!**
+**Let's tinker gadgets**
 
 - Time estimate: One afternoon (net)
 - Cost estimate: Far below 50 Euro (Raspberry Pi, Monitor, Keyboard, Mouse not included)
 - Skill level: Intermediate hobby tinkerer
 
-WIP - Work-In-Progress!
+
 
 
 Background

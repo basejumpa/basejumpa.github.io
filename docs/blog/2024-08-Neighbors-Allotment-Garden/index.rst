@@ -7,7 +7,7 @@
 Neighbors Allotment Garden
 ##########################
 
-**WIP - Work in Progress**
+A miniature FARM stack application **WIP - Work-In-Progress**
 
 .. todo:: Resume  ...
 
@@ -19,7 +19,7 @@ Neighbors Allotment Garden
 Purpose
 *******
 
-My recent post :ref:`sec_modular_react_redux` has used two of the three incredience of the FARM stack :cite:p:`2022basset`. This post will add the third one, MongoDB, to create a full-stack application.
+My recent post :ref:`sec_modular_react_redux` has used two of the three ingredients of the FARM stack :cite:p:`2022basset`. This post will add the third one, MongoDB, to create a full-stack application.
 
 ..
     The "FARM-Stack" is the acronym

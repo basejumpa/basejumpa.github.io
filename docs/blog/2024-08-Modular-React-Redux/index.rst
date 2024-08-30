@@ -7,7 +7,7 @@
 Design Study - React+Redux the Extensible Way
 #############################################
 
-With this article I try to create an extensible version of a Web Application based on React and Redux.
+With this article I try to create an extensible version of a Web Application based on React and Redux. **Finished**
 
 .. figure:: _figures/ui.png
 
