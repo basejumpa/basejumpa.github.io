@@ -4,8 +4,8 @@
 
 .. _sec_neighbors_allotment_garden:
 
-Neighbors Allotment Garden
-##########################
+«PoC» Neighbors Allotment Garden
+################################
 
 A miniature FARM stack application **WIP - Work-In-Progress**
 

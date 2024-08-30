@@ -2,9 +2,8 @@
     :tags: Wii, Balance Board, HX711, Load Cell, Raspberry Pi, ESP32, FARM-Stack, React, Redux, MongoDB, FastAPI, MongoDB,  OpenAPI, Kiota
     :language: English
 
-
-Mini-Project: WePosture
-#######################
+«DiY»  WePosture
+################
 
 Good posture through equilibrium. **WIP - Work-In-Progress**
 

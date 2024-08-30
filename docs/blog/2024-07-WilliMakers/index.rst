@@ -2,10 +2,10 @@
     :tags: Arduino, Programming, Kids, Learning, Mechatronics, German
     :language: German
 
-Willi-Makers 2024
-#################
+«Seminar» Willi-Makers 2024
+###########################
 
-Nach 2016 und 2018 haben in diesem Jahr zum dritten Mal im Willigis-Gymnasium in Mainz Schüler aus der achten Klasse mit Arduino + Co. konstruiert, verkabelt, programmiert und gebaut. Das eben, was man so macht, wenn man ein mechatronisches Gerät entwickelt.
+Nach 2016 und 2018 haben in diesem Jahr zum dritten Mal im Willigis-Gymnasium in Mainz Schüler aus der achten Klasse mit Arduino + Co. konstruiert, verkabelt, programmiert und gebaut. Das eben, was man so macht, wenn man ein mechatronisches Gerät entwickelt. **Abgeschlossen**
 
 Die Projektseite mit den Übungsaufgaben zum Erlernen der Grundkenntnisse ist online verfügbar unter `Willi-Makers <https://basejumpa.github.io/willi-makers>`_ [#willi_makers]_.
 
