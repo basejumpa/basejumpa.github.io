@@ -1,1 +1,2 @@
-# Personal website
+# Basejumpa's Bites - Personal Blog
+
