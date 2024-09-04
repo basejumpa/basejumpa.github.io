@@ -14,7 +14,8 @@ Angaben gemäß § 5 TMG
 
 **Name**::
 
-    Alexander Mann-Wahrenberg
+    Dipl.-Ing. Alexander Mann-Wahrenberg
+    Software- und Systems-Ingenieur
 
 **Anschrift** *(Postal Address)*::
 
@@ -35,34 +36,34 @@ Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
 
 **Name**::
 
-    Alexander Mann-Wahrenberg
+    Dipl.-Ing. Alexander Mann-Wahrenberg
 
+..
+    Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz
+    *****************************************************************
 
-Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz
-*****************************************************************
+    *(VAT Identification Number in accordance with §27 a of the German VAT Act)*
 
-*(VAT Identification Number in accordance with §27 a of the German VAT Act)*
+    **USt-ID**::
 
-**USt-ID**::
+        47 481 906 528 - Finanzamt Groß-Gerau
 
-    47 481 906 528 - Finanzamt Groß-Gerau
+..
+    Handelsregistereintrag
+    ======================
 
+    *(Commercial Register Entry)*
 
-Handelsregistereintrag
-======================
+    **Registergericht** *(register court )*::
 
-*(Commercial Register Entry)*
+        Amtsgericht Groß-Gerau
 
-**Registergericht** *(register court )*::
+        ERV-ID: govello-1184741712234-000050320
 
-    Amtsgericht Groß-Gerau
+        Europaring 11-13, 64521 Groß-Gerau
+        Postanschrift: Postfach 11 62, 64518 Groß-Gerau
 
-    ERV-ID: govello-1184741712234-000050320
-
-    Europaring 11-13, 64521 Groß-Gerau
-    Postanschrift: Postfach 11 62, 64518 Groß-Gerau
-
-    https://ordentliche-gerichtsbarkeit.hessen.de/landgerichtsbezirk-darmstadt/amtsgericht-gross-gerau
+        https://ordentliche-gerichtsbarkeit.hessen.de/landgerichtsbezirk-darmstadt/amtsgericht-gross-gerau
 
 
 Online-Streitbeilegung
@@ -127,9 +128,9 @@ Lizenzierung
 
 *(Licensing)*
 
-Die Inhalte dieser Webseite stehen unter der Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz (**CC BY-SA 4.0**), sofern nicht anders angegeben.
+Die Inhalte dieser Webseite, wenn nicht anders in der jeweiligen Seite gekennzeichnet, stehen unter der Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz (**CC BY-SA 4.0**).
 
-*(The content of this website is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0), unless otherwise stated.)*
+*(The content of this website, unless otherwise indicated on the respective page, is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0).)*
 
 
 Ausnahmen von der Lizenz

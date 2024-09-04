@@ -59,7 +59,6 @@
         "LICENSE": true,
         "README.md": false,
         "docs/_root/": true,
-        "docs/.config": true,
         "docs/.config.old": true,
         "docs/conf.py": true,
         "docs/config.py": true,
