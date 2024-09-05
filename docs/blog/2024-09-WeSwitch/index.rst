@@ -64,8 +64,8 @@ Common commands:
     some_user@some_host:~$ ssh weswitch@weswitch "pinctrl 26 dh"
 
 
-Change initial pin states
-=========================
+Modify initial states
+=====================
 
 Currently pins `19` and `26` are set to `ON` after reboot. All other pins are in default behavior which is `OFF`.
 

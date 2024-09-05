@@ -80,7 +80,7 @@ try:
     __repo = Repo(_calculate_repo_root_dir(config.BUILD__DIRS__SOURCE))
     _scm_git_branch = __repo.active_branch.name
 except:
-    logger.warning(f"Couldn't get git branch.")
+    logger.info(f"Couldn't get git branch.")
 
 ### SPHINX CONFIGURATION (GENERAL) ############################################
 # @see https://www.sphinx-doc.org/en/master/usage/configuration.html
