@@ -1,5 +1,5 @@
 .. post:: 2024-08-19
-    :tags: Wii, Balance Board, HX711, Load Cell, Raspberry Pi, ESP32, FARM-Stack, React, Redux, MongoDB, FastAPI, MongoDB,  OpenAPI, Kiota
+    :tags: «DiY», Load Cell, HX711, Raspberry PI, FARM-Stack, React, Redux, MongoDB, FastAPI, MongoDB, OpenAPI, WIP
     :language: English
 
 «DiY»  WePosture

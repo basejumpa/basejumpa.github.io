@@ -1,5 +1,5 @@
 .. post:: 2024-08-13
-    :tags: Software Architecture, Full-Stack, Javascript, Python, FARM Stack, React, Redux, MongoDB, FastAPI, MongoDB,  OpenAPI, Kiota
+    :tags: «PoC», Software Architecture, Full-Stack, Javascript, Python, FARM Stack, React, Redux, MongoDB, FastAPI, MongoDB,  OpenAPI, WIP
     :language: English
 
 .. _sec_neighbors_allotment_garden:

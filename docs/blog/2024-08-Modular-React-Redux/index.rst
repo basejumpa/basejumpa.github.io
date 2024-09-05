@@ -1,5 +1,5 @@
 .. post:: 2024-08-01
-    :tags: React, Redux, Software Architecture, Extensibility, Modularity
+    :tags: «PoC», React, Redux, Software Architecture, Extensibility, Modularity, COMPLETED
     :language: English
 
 .. _sec_modular_react_redux:
@@ -7,7 +7,7 @@
 «PoC» React+Redux the Extensible Way
 ####################################
 
-With this article I try to create an extensible version of a Web Application based on React and Redux. **Finished**
+With this article I try to create an extensible version of a Web Application based on React and Redux. **Completed**
 
 .. figure:: _figures/ui.png
 

@@ -1,7 +1,7 @@
-Hi, there!
-##########
+Basejumpa's Bites
+#################
 
-Welcome to my homepage [#]_.
+Welcome! [#]_.
 
 .. toctree::
     :maxdepth: 2
@@ -17,4 +17,4 @@ Welcome to my homepage [#]_.
     :excerpts:
 
 
-.. [#] My homepage is more than inspired by :cite:p:`2024holdgraf`. My credits to the author.
+.. [#] My blog page is more than inspired by :cite:p:`2024holdgraf`. My credits to the author Chris!
