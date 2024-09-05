@@ -1,31 +1,11 @@
-Behind the Scenes
-#################
+Making Of
+#########
 
 Switch Sockets via wired network  **Challenge accepted**
 
 .. contents:: On this page
     :local:
     :depth: 2
-
-
-The Challenge
-*************
-
-Enable switching of a power socket remotely via wired network operated by a tech-savvy user.
-
-Given / provided components:
-
-.. figure:: _figures/switchbox_with_cable_and_type_label.png
-    :scale: 20%
-
-    SwitchBox with cable and type label
-
-.. figure:: _figures/RPI_4B_and_memory_card.png
-    :scale: 20%
-
-    Raspberry Pi 4B with memory card
-
-I coulnd't find the operation manual online anymore, since I got it in paper form I scanned it: :download:`Operation Manual SwitchBox Relais-V1 <_attachments/ANTRAX_SwitchBox_Relais_V1.pdf>`
 
 
 Analyze and Create
@@ -203,8 +183,8 @@ Have a coffee with me
 Let's enjoy our new tool and `drink a ☕ together ... <https://www.paypal.com/donate/?hosted_button_id=DDV9AQBFJNMVU>`__ 😁.
 
 
-The Making-Of
-*************
+Discarded
+*********
 
 The procedure / walk
 ====================
