@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="81OLYhewOZMGTi1vEdpT" name="Page-1">
-        <mxGraphModel dx="715" dy="678" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
+        <mxGraphModel dx="678" dy="280" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="28" value="page_frame (invisible)" style="locked=1;" parent="0"/>
@@ -45,7 +45,7 @@
                         <mxPoint x="-11" y="11" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="18" value="&lt;span style=&quot;color: rgb(51, 51, 51); text-align: left;&quot;&gt;&amp;nbsp;«host»&amp;nbsp;&lt;/span&gt;&lt;br&gt;RPI" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=10;" parent="17" vertex="1">
+                <mxCell id="18" value="&lt;span style=&quot;color: rgb(51, 51, 51); text-align: left;&quot;&gt;&amp;nbsp;&lt;/span&gt;«RPI»&lt;br&gt;&lt;span style=&quot;color: rgb(51, 51, 51); text-align: left;&quot;&gt;«host»&lt;br&gt;&lt;/span&gt;weswitch&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=10;" parent="17" vertex="1">
                     <mxGeometry x="420" y="303" width="60" height="45" as="geometry"/>
                 </mxCell>
                 <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=box;startFill=0;endArrow=none;endFill=0;elbow=vertical;fontSize=10;" parent="17" source="19" target="13" edge="1">
@@ -65,7 +65,7 @@
                 </mxCell>
                 <mxCell id="29" value="neighbor_systems" style="locked=1;" parent="0"/>
                 <mxCell id="30" value="«neighbor»&lt;br style=&quot;font-size: 10px;&quot;&gt;some_electrical_device" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;verticalAlign=middle;fontSize=10;" parent="29" vertex="1">
-                    <mxGeometry x="529" y="150" width="110" height="45" as="geometry"/>
+                    <mxGeometry x="525" y="150" width="120" height="45" as="geometry"/>
                 </mxCell>
                 <mxCell id="32" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=box;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=10;" parent="29" source="12" target="30" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -80,13 +80,13 @@
                         <mxPoint x="340" y="320.9348534201954" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="45" value="pinctrl&lt;br&gt;over&lt;br&gt;SSH" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" parent="36" vertex="1" connectable="0">
-                    <mxGeometry x="-0.1442" relative="1" as="geometry">
-                        <mxPoint x="3" y="-25" as="offset"/>
-                    </mxGeometry>
-                </mxCell>
                 <mxCell id="38" style="edgeStyle=orthogonalEdgeStyle;html=1;startArrow=box;startFill=0;endArrow=none;endFill=0;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=10;" parent="29" source="33" target="37" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="SSH" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="38">
+                    <mxGeometry x="0.032" relative="1" as="geometry">
+                        <mxPoint x="15" y="3" as="offset"/>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="48" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.133;entryY=-0.005;entryDx=0;entryDy=0;fontSize=10;startArrow=none;startFill=0;endArrow=open;endFill=0;dashed=1;elbow=vertical;curved=1;entryPerimeter=0;" parent="29" source="37" target="55" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
