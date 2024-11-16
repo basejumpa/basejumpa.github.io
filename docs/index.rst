@@ -9,6 +9,7 @@ Welcome! [#]_.
 
     blog/index
     about/index
+    hermesbaby/index
     bibliography/index
     imprint/index
 
