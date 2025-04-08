@@ -43,11 +43,11 @@ jobs:
         run: make -f docs/Makefile html
 
       - name: Upload website to artifacts
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: './out/docs/html'
 
       - name: Publish website at GitHub Pages
         id: deployment
         if: github.ref == 'refs/heads/main'
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v2

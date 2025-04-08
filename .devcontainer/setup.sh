@@ -20,7 +20,7 @@ export PATH="$PATH:$HOME/.local/bin" # Works at least for root. That's fine for 
 ### Make available drawio in headless mode ####################################
 
 # Install necessary libraries
-$SUDO apt-get install -y libasound2
+$SUDO apt-get install -y libasound2t64 || $SUDO apt-get install -y libasound2
 
 # Install drawio
 if which drawio; then
