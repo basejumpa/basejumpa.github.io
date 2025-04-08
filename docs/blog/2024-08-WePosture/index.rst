@@ -110,25 +110,64 @@ Here some GPT-4o chats:
 Insights in Work-In-Progress
 ****************************
 
-.. figure:: _figures/balance_board.png
+
+Hardware (Electronics + Mechanics)
+==================================
+
+Prototype Generation One
+------------------------
+
+.. figure:: _figures/prototype_1/balance_board.png
 
     Balance board with top side made of glass waiting and 1k Resistors waiting to get to the four HX711 amplifiers of in the circuit.
 
-.. figure:: _figures/sketch_ui_ux.png
+.. figure:: _figures/prototype_1/sketch_ui_ux.png
 
     Sketch on UI/UX
 
-.. figure:: _figures/rpi_4b_and_circuit.png
+.. figure:: _figures/prototype_1/rpi_4b_and_circuit.png
 
     RPI 4B connected to 2x4 HX711, Power, Monitor, Keyboard and Mouse
 
-.. figure:: _figures/pinout_connections_1_of_2.png
+.. figure:: _figures/prototype_1/pinout_connections_1_of_2.png
 
     Pinout connections 1 of 2
 
-.. figure:: _figures/pinout_connections_2_of_2.png
+.. figure:: _figures/prototype_1/pinout_connections_2_of_2.png
 
     Pinout connections 2 of 2
+
+
+Prototype Generation Two
+------------------------
+
+The one-board design from Generation One has changed to a two-board design, each foot gets its own board. The boards are not mechanically connected. The advantage is that they can be adjusted to the foot distance and the orientations to the feed.
+
+I've also thought about a slight modified design which connects the boards mechanically to establish parallel alignment while leaving the distance to the boards variable (within a defined range).
+
+The posture boards' frames are made of wood, the top plates are made of 8mm multiplex board to establish the necessary bending stiffness. The bottom plates are made of 4mm wood plates usually found as rear panels of furniture. The load cells. The top place is pulled to  the bottom by a center screw tightened from the bottom in order to leave the top plate untouched and clean w/o any bores. The tightened center screw creates a preload onto the cells. This preload is zerod out in the initialization phase of the software. While the bottom plates are glued to the frames the top plate floats a little, held and limited by the frame.
+
+One of the boards is extended by the integrated housing of the RaspberryPi. The RaspberyPi has a shield which enables Power-On-LAN (PoL). This reduced the number of cables to be connected to the board. The connection to the other board is made by standard RJ45 cable and suitable sockets. There is no IP network, though. It is the SPI + GPIO + Power connection just realized over those standard cables. This is to keep the design simple and with standardized components.
+
+.. figure:: _figures/prototype_2/posture_boards_disassembled.png
+
+    Posture boards disassembled.
+
+
+.. figure:: _figures/prototype_2/setup_hardware_software_integration.png
+
+    Setup hardware and software integration testsing/tinkering
+
+
+The demo setup is a simple mug scale. The load cell is mounted on the bottom of the mug. The load cell is connected to the HX711 amplifier. The HX711 is connected to a
+
+.. figure:: _figures/prototype_2/demo_mug_scale_one_load_cell.png
+
+    Demo mug scale with one load cell, the HX711 amplifier and a display module
+
+
+Software
+========
 
 Software (Repository: https://github.com/basejumpa/WeBalance ) already acquires data. Here the continuous output (obsolete, still the output of just 4 load cells connected)::
 
@@ -150,7 +189,7 @@ Software (Repository: https://github.com/basejumpa/WeBalance ) already acquires 
 
 **Next step:** connect each load cell to its own HX711 as shown here:
 
-.. figure:: _figures/circuit_hx711_one_load_cell.jpg
+.. figure:: _figures/circuit_hx711_load_cell.jpg
 
     Circuit one cell connected to one hx711. Origin: `Arduino Scale with HX711 and 50kg Bathroom Scale Load Cells | Step by Step Guide | Connecting one load cell <https://youtu.be/LIuf2egMioA?si=IAhVZdv8fffR8lHE&t=46>`__
 
