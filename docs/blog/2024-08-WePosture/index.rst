@@ -121,6 +121,13 @@ Prototype Generation One
 
     Balance board with top side made of glass waiting and 1k Resistors waiting to get to the four HX711 amplifiers of in the circuit.
 
+
+UI/UX:
+
+Create image Create a screenshot from a web application created with ant design based on the hand drawing I provided.
+
+You can see the outlines of a left foot and a right foot from top. Each is standing on a plate, illustrated as a rectangle. In the middle there is in black+white the optimal center of gravity of the person who's feet we see projected onto the floor the person is standing. We the actual projected center of gravity as a circle with blue outline and a pie chart in the middle. The left sector of the pie chart is red, the right one is green. In maritime colors the left (larboard, aka port) is red, the right (starboard) is green. We see, in red, another pie chart with a red outline and the same in green, last one on the right. Those are the projected center of gravity of each of the feet. Both feed-center-of-gravities (more exact the projections of them) are combined to the one with the blue outline.
+
 .. figure:: _figures/prototype_1/sketch_ui_ux.png
 
     Sketch on UI/UX
@@ -148,6 +155,12 @@ I've also thought about a slight modified design which connects the boards mecha
 The posture boards' frames are made of wood, the top plates are made of 8mm multiplex board to establish the necessary bending stiffness. The bottom plates are made of 4mm wood plates usually found as rear panels of furniture. The load cells. The top place is pulled to  the bottom by a center screw tightened from the bottom in order to leave the top plate untouched and clean w/o any bores. The tightened center screw creates a preload onto the cells. This preload is zerod out in the initialization phase of the software. While the bottom plates are glued to the frames the top plate floats a little, held and limited by the frame.
 
 One of the boards is extended by the integrated housing of the RaspberryPi. The RaspberyPi has a shield which enables Power-On-LAN (PoL). This reduced the number of cables to be connected to the board. The connection to the other board is made by standard RJ45 cable and suitable sockets. There is no IP network, though. It is the SPI + GPIO + Power connection just realized over those standard cables. This is to keep the design simple and with standardized components.
+
+
+.. drawio-figure:: _figures/prototype_2/sketch_ui_ux.drawio
+
+    Sketch on UI/UX
+
 
 .. figure:: _figures/prototype_2/posture_boards_disassembled.png
 
