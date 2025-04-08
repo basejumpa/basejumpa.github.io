@@ -162,14 +162,28 @@ One of the boards is extended by the integrated housing of the RaspberryPi. The 
     Sketch on UI/UX
 
 
+.. figure:: _figures/posture_boards_assembled.png
+
+    Posture boards assembled
+
+.. figure:: _figures/posture_cable_harness_inkl_pol_injector.png
+
+    Posture cable harness inkl. PoL injector
+
+
+.. figure:: _figures/posture_kit_complete.png
+
+    Posture kit complete
+
+
 .. figure:: _figures/prototype_2/posture_boards_disassembled.png
 
-    Posture boards disassembled.
+    Posture boards disassembled
 
 
 .. figure:: _figures/prototype_2/setup_hardware_software_integration.png
 
-    Setup hardware and software integration testsing/tinkering
+    Setup hardware and software integration testing/tinkering
 
 
 The demo setup is a simple mug scale. The load cell is mounted on the bottom of the mug. The load cell is connected to the HX711 amplifier. The HX711 is connected to a
