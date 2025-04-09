@@ -43,4 +43,4 @@ jobs:
       - name: Publish website at GitHub Pages
         id: deployment
         if: github.ref == 'refs/heads/main'
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
