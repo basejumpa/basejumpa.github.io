@@ -41,7 +41,7 @@
     },
     "peacock.color": "#42b883",
 
-    "files.exclude": {
+    "files_deact.exclude": {
         "**/__pycache__/": true,
         "**/*.pyc": true,
         ".devcontainer": true,

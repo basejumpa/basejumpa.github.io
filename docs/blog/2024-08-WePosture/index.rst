@@ -196,6 +196,10 @@ The demo setup is a simple mug scale. The load cell is mounted on the bottom of 
 Software
 ========
 
+
+Backend
+-------
+
 Software (Repository: https://github.com/basejumpa/WeBalance ) already acquires data. Here the continuous output (obsolete, still the output of just 4 load cells connected)::
 
     --snip--
@@ -220,6 +224,182 @@ Software (Repository: https://github.com/basejumpa/WeBalance ) already acquires 
 
     Circuit one cell connected to one hx711. Origin: `Arduino Scale with HX711 and 50kg Bathroom Scale Load Cells | Step by Step Guide | Connecting one load cell <https://youtu.be/LIuf2egMioA?si=IAhVZdv8fffR8lHE&t=46>`__
 
+
+Realization of REST-API with OpenAPI specificatin using FastAPI.
+
+Constraints: Use Python, use FastAPI. Realize the persistent storage via json files. Expose OpenAPI description.
+
+.. code-block:: python
+
+    from fastapi import FastAPI, HTTPException
+    from pydantic import BaseModel
+    from typing import Dict
+    import json
+    import os
+    from pathlib import Path
+    import uvicorn
+
+    # Import sensor reading logic
+    from weposture.__main__ import get_sensor_values
+
+    CONFIG_FILE = Path("config.json")
+
+    def load_config():
+        if CONFIG_FILE.exists():
+            with open(CONFIG_FILE) as f:
+                return json.load(f)
+        return {"offsets": {"left": 0.0, "right": 0.0, "center": 0.0}, "k_factors": {"left": 1.0, "right": 1.0, "center": 1.0}}
+
+    def save_config(cfg):
+        with open(CONFIG_FILE, 'w') as f:
+            json.dump(cfg, f, indent=2)
+
+    app = FastAPI(title="WePosture API", version="1.0")
+
+    config = load_config()
+
+    class SensorValues(BaseModel):
+        left: float
+        right: float
+        center: float
+
+    class Vector(BaseModel):
+        x: float
+        y: float
+        value: float
+
+    class PostureData(BaseModel):
+        left: Vector
+        right: Vector
+        center: Vector
+
+    class CalibrateInput(BaseModel):
+        mass_kg: float
+
+    @app.get("/live", response_model=PostureData)
+    def get_live_data():
+        raw = get_sensor_values()
+        try:
+            adjusted = {
+                k: (raw[k] - config['offsets'][k]) * config['k_factors'][k]
+                for k in ['left', 'right', 'center']
+            }
+            # Placeholder positions based on domain logic
+            positions = {
+                "left": {"x": -100, "y": -50},
+                "right": {"x": 100, "y": -50},
+                "center": {"x": 0, "y": 0},
+            }
+            return PostureData(**{
+                k: Vector(x=positions[k]["x"], y=positions[k]["y"], value=adjusted[k])
+                for k in adjusted
+            })
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=str(e))
+
+    @app.post("/zero")
+    def zero_system():
+        raw = get_sensor_values()
+        config['offsets'] = raw
+        save_config(config)
+        return {"status": "ok", "message": "System zeroed"}
+
+    @app.post("/calibrate")
+    def calibrate_system(data: CalibrateInput):
+        raw = get_sensor_values()
+        # Compute average value as sum of all for simplicity (can be refined)
+        total_raw = sum(raw.values())
+        if total_raw == 0:
+            raise HTTPException(status_code=400, detail="Sensor values are all zero, cannot calibrate.")
+        for k in raw:
+            config['k_factors'][k] = (data.mass_kg * 9.81 * (raw[k] - config['offsets'][k]) / raw[k]) if raw[k] != 0 else 1.0
+        save_config(config)
+        return {"status": "ok", "message": "Calibration done", "k_factors": config['k_factors']}
+
+    if __name__ == "__main__":
+        uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+
+
+Frontend
+--------
+
+Constraints: JavaScript, React, React-Router, Ant-Design, React-Icons / Ant-Icons, Redux, RTK-Query. if necesarry: React-Three-Fiber, Drei, React-Plotly.
+
+
+.. code-block::
+
+    import React, { useEffect } from 'react';
+    import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+    import { Button } from 'antd';
+    import { useKeyPress } from 'ahooks';
+    import { useDispatch } from 'react-redux';
+    import { useGetPostureDataQuery, useZeroSystemMutation } from './api/postureApi';
+    import './App.css';
+
+    const origin = { x: 0, y: 0 };
+
+    const FloatingCircle = ({ x, y, value, color }) => {
+    const style = {
+        position: 'absolute',
+        left: `calc(50% + ${x}px)`,
+        top: `calc(50% - ${y}px)`,
+        transform: 'translate(-50%, -50%)',
+        borderRadius: '50%',
+        border: `2px solid ${color}`,
+        padding: '10px',
+        background: 'rgba(255,255,255,0.8)',
+        fontWeight: 'bold',
+    };
+    return <div style={style}>{value}</div>;
+    };
+
+    const LiveView = () => {
+    const { data, refetch } = useGetPostureDataQuery();
+    const [zeroSystem] = useZeroSystemMutation();
+
+    useKeyPress('space', () => zeroSystem());
+
+    const handleZero = () => {
+        zeroSystem();
+    };
+
+    return (
+        <div className="canvas-wrapper">
+        <div className="feet-overlay">
+            <img src="/left_foot.svg" alt="left foot" className="foot left" />
+            <img src="/right_foot.svg" alt="right foot" className="foot right" />
+        </div>
+        <div className="fixed-circle" />
+
+        {data && (
+            <>
+            <FloatingCircle x={data.left.x} y={data.left.y} value={data.left.value} color="red" />
+            <FloatingCircle x={data.center.x} y={data.center.y} value={data.center.value} color="blue" />
+            <FloatingCircle x={data.right.x} y={data.right.y} value={data.right.value} color="green" />
+            </>
+        )}
+
+        <Button onClick={handleZero} className="zero-button">Zero</Button>
+        </div>
+    );
+    };
+
+    const App = () => {
+    return (
+        <Router>
+        <Routes>
+            <Route path="/" element={<LiveView />} />
+        </Routes>
+        </Router>
+    );
+    };
+
+    export default App;
+
+
+
+Operating System
+----------------
 
 Flash SD-Card with Raspberry Pi OS Lite 64-bit:
 
