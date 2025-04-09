@@ -17,7 +17,6 @@ Good posture through equilibrium. **WIP - Work-In-Progress**
 .. contents::
     :local:
 
-
 Background
 **********
 
@@ -174,6 +173,8 @@ One of the boards is extended by the integrated housing of the RaspberryPi. The 
 
     Posture cable harness inkl. PoL injector
 
+
+.. _fig_posture_kit_complete:
 
 .. figure:: _figures/posture_kit_complete.png
 
@@ -410,3 +411,13 @@ Flash SD-Card with Raspberry Pi OS Lite 64-bit:
 .. figure:: _figures/initial_os_settings.png
 
     Initial OS settings on Raspberry Pi OS Lite 64-bit
+
+
+License
+*******
+
+This maker-project is licensed under `CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`__, copyright 2024 Alexander Mann-Wahrenberg (`basejumpa <https://github.com/basejumpa>`__).
+
+The derived software "WeBalance", split apart as own repository at `WeBalance <https://github.com/basejumpa/WeBalance>`__, is licensed under `MIT <https://opensource.org/license/mit/>`__.
+
+Donations welcome (see coffee cup icon top right :-)).
