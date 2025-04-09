@@ -14,6 +14,10 @@ Good posture through equilibrium. **WIP - Work-In-Progress**
 - Skill level: Intermediate hobby tinkerer
 
 
+.. contents::
+    :local:
+
+
 Background
 **********
 
