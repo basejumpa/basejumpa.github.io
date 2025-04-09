@@ -38,7 +38,7 @@ BOM - Bill Of Material
 
 Production (and Development):
 
-- `1x Raspberry PI 5 (RPI5) <https://www.berrybase.de/raspberry-pi-5-8gb-ram?number=RPI5-8GB&utm_source=google&utm_medium=cpc&gad_source=1&gclid=Cj0KCQjwrKu2BhDkARIsAD7GBov8VedHTQojvFLXx4jcSPB8PM5e2Y9TdrDWQBwLO_QkQxTjDE9FAdEaAlxmEALw_wcB>`__
+- `1x Raspberry PI 4B (RPI4)
 - 1x SD-Card 32G
 - 1x Power adapter 5V, enough current for powering RPI5
 - 1x USB-C cable for powering RPI5
@@ -46,10 +46,12 @@ Production (and Development):
 - `T-Cobbler for RPI <https://www.berrybase.de/t-cobbler-fuer-raspberry-pi-inkl.-gpio-kabel?number=BT-Cobbler&utm_source=google&utm_medium=cpc&gad_source=1&gclid=Cj0KCQjwrKu2BhDkARIsAD7GBotR3UGKdKQ3AWmxZ8MnXMjBl_Sm3wK_7dTaAdycOJBxgVBQf0BfKxAaAlAhEALw_wcB>`__
 - Enough Jumper wires male-male
 - Enough Jumper wires male-female
-- 1x `Ebay: Digital Scale Set (4x Load Cell 50kg each, 1x Amplifier HX711) <https://www.ebay.de/itm/234796576410?_trkparms=amclksrc%3DITM%26aid%3D1110006%26algo%3DHOMESPLICE.SIM%26ao%3D1%26asc%3D20200818143230%26meid%3Db5a09e7cc4f748fc8f013a86210382b7%26pid%3D101224%26rk%3D4%26rkt%3D5%26sd%3D386339206392%26itm%3D234796576410%26pmt%3D1%26noa%3D1%26pg%3D4429486%26algv%3DDefaultOrganicWebV9BertRefreshRankerWithCassiniEmbRecall%26brand%3DMarkenlos&_trksid=p4429486.c101224.m-1>`__
-- 3x `Ebay: Amplifier HX711 <https://www.ebay.de/itm/293840537869?_nkw=HX711&itmmeta=01J5MQ8NQHS3Y0ZFJKER1DWYD7&hash=item446a42c90d:g:PgYAAOSwkH5kLTdk&itmprp=enc%3AAQAJAAAA4HoV3kP08IDx%2BKZ9MfhVJKlUkfHyxwr%2BcpjnFHyV18f%2FXZVUImoDurlDUvWO7FGWzAvbALLgRSUeKFzUiAI1BU23DXZelMUpHoeSfk3Jc6RdHAFSf6rsXMGCfvNVir3ITwbpHFq0f4JaV1lmQOztEQfbx6%2B22gKCoyXXevfquYPC4Z5Invd6KXuPmhFXapL84s9R2ub3JXgjbuU1m9GApfa6P6a8gqTIUPOrSPDnNK%2BaF%2Br3cLpOva0R5QmUomA9cDOUuEDB1rq%2FbqetKhF8VQbN%2B5e5s87Ztk5DtmhsX5Z4%7Ctkp%3ABFBM9tuil61k>`__
-- 4x `Thingiverse| Half Bridge Load Sensor mount <https://www.thingiverse.com/thing:4873113>`__
-
+- 2x `Ebay: Digital Scale Set (4x Load Cell 50kg each, 1x Amplifier HX711) <https://www.ebay.de/itm/234796576410?_trkparms=amclksrc%3DITM%26aid%3D1110006%26algo%3DHOMESPLICE.SIM%26ao%3D1%26asc%3D20200818143230%26meid%3Db5a09e7cc4f748fc8f013a86210382b7%26pid%3D101224%26rk%3D4%26rkt%3D5%26sd%3D386339206392%26itm%3D234796576410%26pmt%3D1%26noa%3D1%26pg%3D4429486%26algv%3DDefaultOrganicWebV9BertRefreshRankerWithCassiniEmbRecall%26brand%3DMarkenlos&_trksid=p4429486.c101224.m-1>`__
+- 8x `Ebay: Amplifier HX711 <https://www.ebay.de/itm/293840537869?_nkw=HX711&itmmeta=01J5MQ8NQHS3Y0ZFJKER1DWYD7&hash=item446a42c90d:g:PgYAAOSwkH5kLTdk&itmprp=enc%3AAQAJAAAA4HoV3kP08IDx%2BKZ9MfhVJKlUkfHyxwr%2BcpjnFHyV18f%2FXZVUImoDurlDUvWO7FGWzAvbALLgRSUeKFzUiAI1BU23DXZelMUpHoeSfk3Jc6RdHAFSf6rsXMGCfvNVir3ITwbpHFq0f4JaV1lmQOztEQfbx6%2B22gKCoyXXevfquYPC4Z5Invd6KXuPmhFXapL84s9R2ub3JXgjbuU1m9GApfa6P6a8gqTIUPOrSPDnNK%2BaF%2Br3cLpOva0R5QmUomA9cDOUuEDB1rq%2FbqetKhF8VQbN%2B5e5s87Ztk5DtmhsX5Z4%7Ctkp%3ABFBM9tuil61k>`__
+- 8x `Thingiverse| Half Bridge Load Sensor mount <https://www.thingiverse.com/thing:4873113>`__
+- PoE Hat (Waveshare 23285)
+- PoE Power Injector (TP-Link TL-POE160S, 30W)
+- 2x RJ45 socket
 
 Development (in addition):
 
@@ -157,7 +159,7 @@ I've also thought about a slight modified design which connects the boards mecha
 
 The posture boards' frames are made of wood, the top plates are made of 8mm multiplex board to establish the necessary bending stiffness. The bottom plates are made of 4mm wood plates usually found as rear panels of furniture. The load cells. The top place is pulled to  the bottom by a center screw tightened from the bottom in order to leave the top plate untouched and clean w/o any bores. The tightened center screw creates a preload onto the cells. This preload is zerod out in the initialization phase of the software. While the bottom plates are glued to the frames the top plate floats a little, held and limited by the frame.
 
-One of the boards is extended by the integrated housing of the RaspberryPi. The RaspberyPi has a shield which enables Power-On-LAN (PoL). This reduced the number of cables to be connected to the board. The connection to the other board is made by standard RJ45 cable and suitable sockets. There is no IP network, though. It is the SPI + GPIO + Power connection just realized over those standard cables. This is to keep the design simple and with standardized components.
+One of the boards is extended by the integrated housing of the RaspberryPi. The RaspberyPi has a shield which enables Power-On-LAN (PoE). This reduced the number of cables to be connected to the board. The connection to the other board is made by standard RJ45 cable and suitable sockets. There is no IP network, though. It is the SPI + GPIO + Power connection just realized over those standard cables. This is to keep the design simple and with standardized components.
 
 
 .. drawio-figure:: _figures/prototype_2/sketch_ui_ux.drawio
@@ -169,9 +171,9 @@ One of the boards is extended by the integrated housing of the RaspberryPi. The 
 
     Posture boards assembled
 
-.. figure:: _figures/posture_cable_harness_inkl_pol_injector.png
+.. figure:: _figures/posture_cable_harness_inkl_PoE_injector.png
 
-    Posture cable harness inkl. PoL injector
+    Posture cable harness inkl. PoE injector
 
 
 .. _fig_posture_kit_complete:
