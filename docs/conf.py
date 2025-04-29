@@ -101,6 +101,7 @@ gcopyright = ", ".join([str(config.DOC__YEAR), config.DOC__AUTHOR])
 language = config.DOC__LANGUAGE
 
 exclude_patterns = [
+    "**/README.md",
 ]
 
 ## Let's expand `some string` to `some string` instead of *some string*
@@ -179,6 +180,33 @@ if _scm_git_branch:
 
 # Ordered list. Order: Most general first, then for more and more special usescases
 extensions = []
+
+
+### Add other markdown formats other than .rst  ##############################
+# @see https://www.sphinx-doc.org/en/master/usage/markdown.html
+# @see https://myst-parser.readthedocs.io/en/latest/sphinx/intro.html
+# @see https://myst-parser.readthedocs.io/en/latest/index.html
+
+extensions.append("myst_parser")
+
+myst_enable_extensions = [
+    "amsmath",
+    "attrs_inline",
+    "colon_fence",
+    "deflist",
+    "dollarmath",
+    "fieldlist",
+    "html_admonition",
+    "html_image",
+    # "linkify",
+    "replacements",
+    "smartquotes",
+    "strikethrough",
+    "substitution",
+    "tasklist",
+]
+
+myst_substitutions = {}
 
 
 ### Create sitemap.xml for search engines ####################################
