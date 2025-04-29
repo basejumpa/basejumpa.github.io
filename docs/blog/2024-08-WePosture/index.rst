@@ -38,7 +38,7 @@ BOM - Bill Of Material
 
 Production (and Development):
 
-- `1x Raspberry PI 4B (RPI4)
+- 1x Raspberry PI 4B (RPI4)
 - 1x SD-Card 32G
 - 1x Power adapter 5V, enough current for powering RPI5
 - 1x USB-C cable for powering RPI5
@@ -171,7 +171,8 @@ One of the boards is extended by the integrated housing of the RaspberryPi. The 
 
     Posture boards assembled
 
-.. figure:: _figures/posture_cable_harness_inkl_PoE_injector.png
+
+.. figure:: _figures/posture_cable_harness_incl_pol_injector.png
 
     Posture cable harness inkl. PoE injector
 
