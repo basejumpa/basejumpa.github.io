@@ -416,6 +416,19 @@ Flash SD-Card with Raspberry Pi OS Lite 64-bit:
     Initial OS settings on Raspberry Pi OS Lite 64-bit
 
 
+Investigating Alternative Designs
+*********************************
+
+Using a Pressure Map instead of Load Cells
+==========================================
+
+Investigation in early stage:
+
+- https://www.youtube.com/watch?v=ao4_gHEmUw4
+- https://www.youtube.com/watch?v=I1ExRd3C0QU (FSR402)
+- https://www.youtube.com/watch?v=-jLctZvKvBU (FSR402)
+- Search for "FSR" at AliExpress & Co.
+
 License
 *******
 
