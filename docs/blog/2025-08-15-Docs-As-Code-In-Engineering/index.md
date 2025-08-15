@@ -23,7 +23,7 @@ The following chapters outline the mindset, mechanics, and motivation for elevat
 
 ## Systems Thinking as the Foundation of Engineering Disciplines
 
-Systems Thinking provides the structural backbone of any mature engineering discipline. It ensures that the interfaces between systems, subsystems, and domains are clearly defined — not only technically, but also conceptually. This thinking supports traceability, reuse, modularity, and long-term maintainability.
+Systems Thinking provides the structural backbone of any mature engineering discipline. It creates a holistic view onto the System under Development together with the Stakeholders and Neighbor Systems and Enabling Systems in the Context of the Product and its Variants, the valid combinations in the configuraation space of the Product Line . All the contextes during the lifetime of the product line are considered, also comprising developing, testing, industralisation and also the graceful end of lifetime. It ensures that the interfaces between systems, subsystems, and domains are clearly defined — not only technically, but also conceptually. This thinking supports traceability, reuse, modularity, and long-term maintainability.
 
 In our context, the relevant disciplines are:
 
@@ -44,7 +44,7 @@ In multidisciplinary engineering environments, communication often breaks down a
 
 This makes them indispensable in regulated and quality-driven domains, where decisions must be justified, changes reviewed, and intent preserved — not just over months, but over the entire product lifecycle.
 
-## Authoring Specifications with Docs-as-Code: Precise and Efficient in the Long Run
+## Authoring Specifications with Docs-as-Code: Precise and Efficient
 
 Engineers write specifications, manuals, handbooks, and guides — not in isolation, but alongside the systems they build. When authored in the same environment and tools used for code development, documentation becomes a natural part of the engineering workflow.
 
@@ -57,6 +57,14 @@ The Docs-as-Code approach enables specifications to be:
 This alignment lowers the barrier to contribution and increases accuracy, because engineers stay in their familiar toolchain. Over time, this leads to a documentation culture that is **precise**, **transparent**, and **scalable** — with fewer handover issues and stronger cross-team collaboration.
 
 Moreover, specifications treated as code can be reused, queried, transformed, and embedded — turning static documents into living, actionable assets.
+
+**It’s an all-in-one toolbox, but not a mythical do-it-all solution.**
+
+Authoring and communicating information in the form of documents is especially well-suited for describing complex systems, processes, or concepts. When information is highly cohesive—meaning its parts are tightly interrelated—splitting it into isolated items or database entries often disrupts the logical flow and narrative, making it harder for both writers to express and readers to comprehend the full context. Documents allow for nuanced explanations, cross-references, and the preservation of structure, which are essential for conveying intricate ideas effectively and maintaining the integrity of the information.
+
+Rather than attempting to replace specialized tools, Docs-as-Code is designed to integrate seamlessly with systems optimized for managing itemized information—such as change management tools, issue trackers, and requirements databases. In robust engineering workflows, information naturally evolves: as it matures and stabilizes, it may shift between different tools, formats, and levels of formality.
+
+Docs-as-Code supports this in a very high degree since it handles the contents of the documents, so the code of the document information in the same way software engineering handles the code for the software binaries.
 
 ## HermesBaby: Enabling Docs-as-Code in Corporate Environment
 
