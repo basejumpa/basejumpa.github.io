@@ -7,6 +7,9 @@ tags: CC-BY-SA-4.0, Mechatronics, Software Architecture,
 
 # «Article» Engineering Mechatronic Product Lines using the Docs-as-Code Approach
 
+- License: CC BY-SA-4.0
+- Copyright: Alex Mann-Wahrenberg (basejumpa) 2025
+
 ## Engineering-Grade Documentation for Mechatronic Product Lines
 
 Building successful mechatronic product lines means navigating the intersection of software, electronics, and mechanical design — often under tight timelines and strict quality, safety, and regulatory requirements.
