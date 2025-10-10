@@ -201,6 +201,21 @@ The demo setup is a simple mug scale. The load cell is mounted on the bottom of 
     Demo mug scale with one load cell, the HX711 amplifier and a display module
 
 
+Prototype Generation OneDotFive
+-------------------------------
+
+This version serves as a testbed for the software development. The hardware is not the final one, but it is sufficient to develop the software.
+
+.. figure:: _figures/prototype_gen_1_5_mechanics.png
+
+Each of the two plates are supported by 4 load cells and fixed with two screws. The screws are a little longer, do not apply any preload. The bores are a little larger to give the plates enough play to move a little.
+
+I desided to simplify the electronics and reduce the number of HX711 amplifiers from 8 to 4. Each amplifier is connected to a pair of loads cells
+
+.. figure:: _figures/circuit_hx711_pair_of_load_cells.png
+
+    Source: https://www.youtube.com/watch?v=LIuf2egMioA&t=139s
+
 Software
 ========
 
@@ -404,6 +419,16 @@ Constraints: JavaScript, React, React-Router, Ant-Design, React-Icons / Ant-Icon
 
     export default App;
 
+
+Software for Generation OneDotFive
+----------------------------------
+
+The version of this generation is located in the repository https://github.com/basejumpa/WePosture under tag `v1.5.0 <https://github.com/basejumpa/WePosture/tree/v1.5.0>`__ .
+
+It is meant to play with the hardware setup.
+
+- Power on the RPI by connecting it to power.
+- Wait until you see the WiFi access point "WePosture" (default password: "setup2024").
 
 
 Operating System
