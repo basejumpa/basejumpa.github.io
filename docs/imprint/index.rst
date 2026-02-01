@@ -26,7 +26,7 @@ Angaben gemäß § 5 TMG
 **Kontakt** *(Contact)*::
 
     Telefon: +491792440xxx
-    E-Mail: alexander.mannwahrenberg [at] gmail.com
+    E-Mail: alexander [at] mann-wahrenberg.de
 
 
 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
@@ -38,32 +38,32 @@ Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
 
     Dipl.-Ing. Alexander Mann-Wahrenberg
 
-..
-    Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz
-    *****************************************************************
 
-    *(VAT Identification Number in accordance with §27 a of the German VAT Act)*
+Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz
+*****************************************************************
 
-    **USt-ID**::
+*(VAT Identification Number in accordance with §27 a of the German VAT Act)*
 
-        47 481 906 528 - Finanzamt Groß-Gerau
+**USt-ID**::
 
-..
-    Handelsregistereintrag
-    ======================
+    47 481 906 528 - Finanzamt Groß-Gerau
 
-    *(Commercial Register Entry)*
 
-    **Registergericht** *(register court )*::
+Handelsregistereintrag
+======================
 
-        Amtsgericht Groß-Gerau
+*(Commercial Register Entry)*
 
-        ERV-ID: govello-1184741712234-000050320
+**Registergericht** *(register court )*::
 
-        Europaring 11-13, 64521 Groß-Gerau
-        Postanschrift: Postfach 11 62, 64518 Groß-Gerau
+    Amtsgericht Groß-Gerau
 
-        https://ordentliche-gerichtsbarkeit.hessen.de/landgerichtsbezirk-darmstadt/amtsgericht-gross-gerau
+    ERV-ID: govello-1184741712234-000050320
+
+    Europaring 11-13, 64521 Groß-Gerau
+    Postanschrift: Postfach 11 62, 64518 Groß-Gerau
+
+    https://ordentliche-gerichtsbarkeit.hessen.de/landgerichtsbezirk-darmstadt/amtsgericht-gross-gerau
 
 
 Online-Streitbeilegung
