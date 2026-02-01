@@ -48,6 +48,9 @@ Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz
 
     47 481 906 528 - Finanzamt Groß-Gerau
 
+    Art der Tätigkeit / Type of Activity:
+    Software & Systems Engineering 
+
 
 Handelsregistereintrag
 ======================
