@@ -7,8 +7,9 @@ Welcome! [#]_.
     :maxdepth: 2
     :hidden:
 
-    blog/index
     about/index
+    services/index
+    blog/index
     hermesbaby/index
     bibliography/index
     imprint/index
