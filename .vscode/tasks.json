@@ -178,23 +178,6 @@
             }
         },
         {
-            "label": "mk-my-day",
-            "type": "shell",
-            "windows": {
-                "command": "./mk-my-day.sh"
-            },
-            "options": {
-                "statusbar": {
-                    "hide": false
-                }
-            },
-            "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": false
-            }
-        },
-        {
             "label": "pdf (requires MikTex)",
             "type": "shell",
             "command": "make -f docs/Makefile pdf",
@@ -354,23 +337,6 @@
             "options": {
                 "statusbar": {
                     "hide": true
-                }
-            },
-            "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": false
-            }
-        },
-        {
-            "label": "save-my-day",
-            "type": "shell",
-            "windows": {
-                "command": "./save-my-day.sh"
-            },
-            "options": {
-                "statusbar": {
-                    "hide": false
                 }
             },
             "problemMatcher": [],

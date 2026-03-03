@@ -210,7 +210,7 @@ html-live: .tools/.are-up-to-date deps-are-up-to-date-dev
 	# Start continuous build, open browser automatically which reloads on change.
 	@echo "Building sources at $(CFG_DIR_SOURCE)"
 	poetry run sphinx-autobuild \
-        -j 10 \
+        -j 1 \
         -W \
         -c "$(CFG_DIR_CONFIG)" \
         --watch $(CFG_DIR_CONFIG) \
