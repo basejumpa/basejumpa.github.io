@@ -2,19 +2,11 @@
 
 I offer coaching, training, and hands-on workshops around **Software and Systems Engineering**—practical, collaborative, and tailored to your context.
 
-## My clients
+My clients are individuals and engineering teams, in small to mid-sized companies and startups in the DACH region. They build mechatronic systems and products with a high software share.
 
-- Individuals or engineering teams
-- Small to mid-sized companies and startups (DACH area)
-- Building mechatronic systems/products with a high software share
+## I try to help
 
-## How I can help
-
-- Introduce, renew, and operationalize methods and toolchains in your software & systems engineering process
-- Improve clarity and alignment through lightweight, reviewable documentation and architecture practices
-- Strengthen collaboration in distributed teams with transparent, auditable communication patterns
-- Establish or improve CI/CD for software, specifications, and documentation
-- Apply modern AI workflows (LLMs, agents) responsibly to the above
+I help by introducing, renewing, and operationalizing methods and toolchains in your software and systems engineering process. I improve clarity and alignment through lightweight, reviewable documentation and architecture practices, strengthen collaboration in distributed teams with transparent and auditable communication patterns, and establish or improve CI/CD for software, specifications, and documentation. Where appropriate, I apply modern AI workflows (LLMs, agents) responsibly to the above.
 
 ## Topics & Methods
 
@@ -33,14 +25,14 @@ Depending on your environment, I can work with and integrate into tool stacks su
 
 - git
 - Visual Studio Code
-- Markdown, MyST, Sphinx, HermesBaby, Hugo, Astro, ...
+- Markdown, MyST, Sphinx, HermesBaby, Hugo, Astro
 - Atlassian (Jira, Bitbucket Server/Cloud)
-- GitHub (Open Source, Pro, Team, Enterprise)
-- Microsoft 365 (Teams, SharePoint, …)
+- GitHub (Community, Pro, Team, Enterprise)
+- Microsoft 365 (Teams, SharePoint)
 - Google Workspace, Nextcloud
 - AWS, Azure
-- Jenkins, GitHub actions, ...
-- Notion, WordPress, ...
+- Jenkins, GitHub actions
+- Notion, WordPress
 - Python, C/C++, CMake, TypeScript/JavaScript, bash, ...
 - AI tooling: GitHub/Microsoft Copilot, Claude, ChatGPT, Llama (and desktop clients), OpenClaw
 
