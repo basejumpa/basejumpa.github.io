@@ -38,4 +38,9 @@ Depending on your environment, I can work with and integrate into tool stacks su
 
 ## Delivery & Execution
 
-- Remote and combined with on-site at customers' locations
+- Remote and hybrid on-site at customers' locations
+- In German (native) and English (C2-level)
+
+## Contact
+
+Let's get in touch via [LinkedIn](https://www.linkedin.com/in/mann-wahrenberg/) . See you there!
