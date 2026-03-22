@@ -1,0 +1,52 @@
+@startuml
+skinparam backgroundColor transparent
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam packageStyle rectangle
+
+left to right direction
+
+package "Model-Centric Tooling" as MC {
+  rectangle "Proprietary Tools\n\n- Enterprise Architect\n- IBM Rational Rhapsody\n- IBM DOORS\n- PTC Integrity" as Tools
+  rectangle "Models, Views,\nRepositories,\nVendor-Specific Artifacts" as Models
+  rectangle "Visual Richness,\nTraceability Promises,\nProcess Workflows" as Promises
+  rectangle "Meaning scattered across\nmodels, dialogs,\nfields, and tool state" as Scatter
+}
+
+package "Specification-Centered Engineering" as SCE {
+  rectangle "Textual Specification\nunder Version Control\n(Markdown, MyST, AsciiDoc, etc.)" as Spec
+  rectangle "Docs-as-Code Practices\n\n- Git\n- Review\n- Diff\n- CI\n- Validation" as DaC
+  rectangle "Supporting Models\nand Diagrams" as Support
+  rectangle "Shared, Precise,\nand Verifiable Understanding\nof the System" as Understanding
+}
+
+Tools --> Models
+Models --> Promises
+Promises --> Scatter
+
+Spec --> DaC
+DaC --> Understanding
+Support --> Understanding
+Spec --> Support : defines context for
+
+Scatter -[#red,dashed]> Understanding : often fails to establish
+
+note bottom of MC
+Tooling is useful,
+but the tool must not become
+the primary carrier of meaning.
+end note
+
+note bottom of SCE
+Models and diagrams are embraced,
+but they support the specification
+instead of replacing it.
+end note
+
+note top of Understanding
+Engineering requires:
+a shared, precise,
+and verifiable understanding.
+end note
+
+@enduml

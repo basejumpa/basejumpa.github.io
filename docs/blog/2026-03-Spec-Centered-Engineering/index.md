@@ -9,7 +9,7 @@ tags: CC-BY-SA-4.0, Mechatronics, Software Architecture,
 
 **A Resurrection of Engineering Discipline in the Age of Heavyweight Modeling Tools**
 
-Revision 2 — Alexander Mann-Wahrenberg (basejumpa) — 2026
+Alexander Mann-Wahrenberg (basejumpa) — 2026
 
 *License: CC BY-SA 4.0*
 
@@ -22,6 +22,10 @@ In many modern engineering environments, communication has gradually shifted awa
 > **A shared, precise, and verifiable understanding of a system.**
 
 This article proposes a return to a more disciplined approach: **Specification-Centered Engineering**, grounded in **Docs-as-Code** practices. It does not reject modeling or diagrams — on the contrary, it embraces them — but places them in their proper role as *supporting instruments*, not as the primary carriers of meaning.
+
+```{uml} _figures/introduction.puml
+:width: 100%
+```
 
 ---
 

@@ -23,13 +23,13 @@ export PATH="$PATH:$HOME/.local/bin" # Works at least for root. That's fine for 
 $SUDO apt-get install -y libasound2t64 || $SUDO apt-get install -y libasound2
 
 # Install drawio
-if which drawio; then
+if command -v drawio >/dev/null 2>&1; then
     echo "drawio is already installed"
 else
     drawio_package=drawio-amd64-24.4.13.deb
-    curl -L -o $drawio_package https://github.com/jgraph/drawio-desktop/releases/download/v24.4.13/$drawio_package
-    $SUDO apt install -y ./$drawio_package
-    rm $drawio_package
+    curl -L -o "$drawio_package" "https://github.com/jgraph/drawio-desktop/releases/download/v24.4.13/$drawio_package"
+    $SUDO apt-get install -y "./$drawio_package"
+    rm "$drawio_package"
 fi
 
 # Install virtual X-Server
@@ -37,14 +37,18 @@ $SUDO apt-get install -y xvfb
 
 
 ### Install java needed by plantuml ###########################################
+$SUDO apt-get install -y default-jre
 
-$SUDO sudo apt install -y default-jre
+
+### Install graphviz (dot) ####################################################
+$SUDO apt-get install -y graphviz
+dot -V
 
 
 ### Install mermaid command line tool #########################################
 
 # Install nodejs (brings package manager npm with it)
-curl -fsSL https://deb.nodesource.com/setup_20.x | bash
+curl -fsSL https://deb.nodesource.com/setup_20.x | $SUDO -E bash -
 $SUDO apt-get install -y nodejs
 
 # Install mermaid
@@ -52,9 +56,6 @@ $SUDO npm install -g @mermaid-js/mermaid-cli
 mmdc --version
 
 ### Reload environment (variables) ############################################
-
 source ~/.bashrc
 
-
 ### EOF #######################################################################
-
