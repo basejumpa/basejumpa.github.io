@@ -23,7 +23,7 @@ Ich habe das **Fahrrad meiner Träume** hier stehen und kann es **nicht nutzen**
 
 6000 Euro, davon 150 Euro für den Transport, stehen seit zwei Tagen hier herum. Und noch besser: Es ist auf mich personalisiert. Die AGBs und die Vertragsbedingungen des Herstellers sagen klar aus, dass personalisierte Ware vom Umtausch ausgeschlossen ist.
 
-Ist auch verständlich. Wenn eine signifikante Anzahl von Kunden auf 6000 Euro, dann viel billiger kann ein Bike des Herstellers gar nicht konfiguriert werden, seinen persönlichen Touch aufprägt und dann das Ding wieder (kostenfrei) zurückgibt, dann bleibt da nicht viel hängen am Ende des Monats.
+Ist auch verständlich. Wenn eine signifikante Anzahl von Kunden auf 6000 Euro, denn viel billiger kann ein Bike des Herstellers gar nicht konfiguriert werden, seinen persönlichen Touch aufprägt und dann das Ding wieder (kostenfrei) zurückgibt, dann bleibt da nicht viel hängen am Ende des Monats.
 
 Wie kann das sein? Wie kann der vor zwei Jahren begonnene Traum, damals, als ich mich in das Bike verliebt hatte, der Traum, den ich vor 8 Wochen verwirklicht habe, am Samstag abend zum Alptraum werden?
 
