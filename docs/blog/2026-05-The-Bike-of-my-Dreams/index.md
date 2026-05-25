@@ -165,7 +165,7 @@ Hier ist schon mal die Erkenntnis: Es gibt (nur) drei Größen: `S`, `M`, `L`. I
 
 Blöd!
 
-Da merke ich: Der Hersteller meines Gravels hat auf der Gesamten Webseite nirgends (für mich auffindbar) eine Größentabelle mit einer Übersicht der vorhandenen Größen und deren Maßen des Rahmens. So wie ich es von Cube und Co. gewöhnt bin. Und bei Cube ist diese Tabelle sofort griffbereit in deren Online-Größenrechner integriert. Also weniger Blackbox, mehr Transparenz.
+Da merke ich: Der Hersteller meines Gravels hat auf der gesamten Webseite nirgends (für mich auffindbar) eine Größentabelle mit einer Übersicht der vorhandenen Größen und deren Maßen des Rahmens. So wie ich es von Cube und Co. gewöhnt bin. Und bei Cube ist diese Tabelle sofort griffbereit in deren Online-Größenrechner integriert. Also weniger Blackbox, mehr Transparenz.
 
 Das ist der Grund, weswegen mir es nicht aufgefallen ist, dass ich mir das größtmögliche Rad bestellt habe! Das hätte mich doch sofort zweifeln lassen, dass das für mich passend ist, wo ich doch üblicherweise Mittelmaß habe!
 
@@ -173,7 +173,7 @@ So, jetzt zurück zur Erkundung der Funktion, die hinter dem Größenrechner des
 
 Die letzte Tabelle zeigt:
 
-- Die Rahmengröße $a$ ist abhängig von der Körpergröße $x$. Es handelt sich um eine stark nicht-lineare, stufenartige Funktion. Es gibt drei Stufen: `S`,`M` und `L`. Vom kleineren Werten in $x$ kommend beginnen die Stufen bei den Zentimeter-Werten `164`, `174`, `184` sowie `194`. Also in Schritten von `10` Zentimetern. Mit meinen eigenen $184$ habe ich knapp die Größe `M` verpasst und bin in `L` gerrutscht.
+- Die Rahmengröße $a$ ist abhängig von der Körpergröße $x$. Es handelt sich um eine stark nicht-lineare, stufenartige Funktion. Es gibt drei Stufen: `S`,`M` und `L`. Vom kleineren Werten in $x$ kommend beginnen die Stufen bei den Zentimeter-Werten `164`, `174`, `184` sowie `194`. Also in Schritten von `10` Zentimetern. Mit meinen eigenen `184` habe ich knapp die Größe `M` verpasst und bin in `L` gerutscht.
 - Die Sattelstützenlänge $b$ bleibt konstant innerhalb der selben Rahmengröße.
 - Die Tretkurbellänge $c$ ist konstand `170` Millimeter und somit unabhängig von der Rahmengröße $a$.
 
@@ -183,7 +183,17 @@ Jetzt kommt die Analyse des Einflusses der zweiten Komponente des Eingangsvektor
 
 ```{attention}
 Die Innenschrittlänge $y$ hat **keinen** Einfluss! Weder auf die Rahmengröße $a$, die Sattelstützenlänge $b$ noch die Tretkurbellänge $c$!
+
+Es ist sogar so, dass der Konfigurator jegliche Zahl größer gleich `1` annimmt. 
 ```
+
+D.h., wenn ich ein Sitzriese wäre, also eine Schrittlänge von (so) `80` cm hätte bei meiner Körpergröße von `184` cm, macht der Online-Konfigurator daraus:
+
+- Radgröße `L`
+- Sattelstützenlänge `350mm`
+- Tretkurbellänge `170mm`.
+
+Also noch extremer unpassend.
 
 Wahnsinn! Kein Wunder, dass ich bei dem gelieferten Rad mit den Füßen nicht die Pedale erreiche!
 
