@@ -11,10 +11,10 @@ tags: CC-BY-SA-4.0, BikeFitting, BodyLoop, Scannery, Reture
 
 Solche Streiche kann nur das echte Leben spielen.
 
-Explainer:
+Explainers:
 
-- English: https://lnkd.in/dwCVCrcx
-- German: https://lnkd.in/dAZbMdNz
+- [English](https://lnkd.in/dwCVCrcx)
+- [German](https://lnkd.in/dAZbMdNz)
 
 Ich erfahre privat gerade genau einen solcher Situationen, die wir, ich meine das Team rund um den [BodyLoop](https://bodyloop.eu) zusammen mit unseren Partnern von [Scannery](https://scannery.de) auf dem Online-Markt unseren Anwendern ersparen.
 
