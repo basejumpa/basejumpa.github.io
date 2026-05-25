@@ -13,8 +13,8 @@ Solche Streiche kann nur das echte Leben spielen.
 
 Explainers:
 
-- [English](https://lnkd.in/dwCVCrcx)
-- [German](https://lnkd.in/dAZbMdNz)
+- [English](https://youtu.be/hsuloQoPqek?is=PlE-jPgsKbUvG9qr)
+- [German](https://youtu.be/TkE2VO_IXBg?is=6nYe9VXOvYlI4OWj)
 
 Ich erfahre privat gerade genau einen solcher Situationen, die wir, ich meine das Team rund um den [BodyLoop](https://bodyloop.eu) zusammen mit unseren Partnern von [Scannery](https://scannery.de) auf dem Online-Markt unseren Anwendern ersparen.
 
