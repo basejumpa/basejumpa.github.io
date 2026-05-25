@@ -11,6 +11,11 @@ tags: CC-BY-SA-4.0, BikeFitting, BodyLoop, Scannery, Reture
 
 Solche Streiche kann nur das echte Leben spielen.
 
+Explainer:
+
+- English: https://lnkd.in/dwCVCrcx
+- German: https://lnkd.in/dAZbMdNz
+
 Ich erfahre privat gerade genau einen solcher Situationen, die wir, ich meine das Team rund um den [BodyLoop](https://bodyloop.eu) zusammen mit unseren Partnern von [Scannery](https://scannery.de) auf dem Online-Markt unseren Anwendern ersparen.
 
 Im Fokus haben wir die Bekleidungs-Industrie. Mann, währe es doch bei mir nur ein T-Shirt oder vielleicht auch ein Hoody. Dann wäre es zwar ärgerlich, aber Bauchschmerzen hätte ich da bestimmt nicht bekommen.
